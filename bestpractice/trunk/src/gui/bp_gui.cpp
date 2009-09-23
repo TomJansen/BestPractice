@@ -181,9 +181,6 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	wxFlexGridSizer* fgSizer91;
 	fgSizer91 = new wxFlexGridSizer( 4, 1, 0, 0 );
 	fgSizer91->AddGrowableCol( 0 );
-	fgSizer91->AddGrowableRow( 1 );
-	fgSizer91->AddGrowableRow( 2 );
-	fgSizer91->AddGrowableRow( 3 );
 	fgSizer91->SetFlexibleDirection( wxBOTH );
 	fgSizer91->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
@@ -215,6 +212,9 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	fgSizer91->Add( bSizer11, 1, wxEXPAND, 5 );
 	
+	m_staticline31 = new wxStaticLine( m_panel3, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
+	fgSizer91->Add( m_staticline31, 0, wxALL|wxEXPAND, 5 );
+	
 	wxBoxSizer* bSizer12;
 	bSizer12 = new wxBoxSizer( wxVERTICAL );
 	
@@ -235,6 +235,9 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	bSizer12->Add( bSizer8, 1, wxEXPAND, 5 );
 	
 	fgSizer91->Add( bSizer12, 1, wxEXPAND, 5 );
+	
+	m_staticline4 = new wxStaticLine( m_panel3, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
+	fgSizer91->Add( m_staticline4, 0, wxEXPAND | wxALL, 5 );
 	
 	wxBoxSizer* bSizer13;
 	bSizer13 = new wxBoxSizer( wxVERTICAL );
@@ -315,6 +318,10 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	bSizer3->Add( prevButton, 0, wxALL|wxEXPAND, 5 );
 	
 	rewindButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("rewindbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	rewindButton->SetMinSize( wxSize( 40,20 ) );
+	
+	rewindButton->SetMinSize( wxSize( 40,20 ) );
+	
 	bSizer3->Add( rewindButton, 0, wxALL|wxEXPAND, 5 );
 	
 	playButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("playbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
@@ -332,6 +339,10 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	bSizer3->Add( pauseButton, 0, wxALL|wxEXPAND, 5 );
 	
 	forwardButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("forwardbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	forwardButton->SetMinSize( wxSize( 40,20 ) );
+	
+	forwardButton->SetMinSize( wxSize( 40,20 ) );
+	
 	bSizer3->Add( forwardButton, 0, wxALL|wxEXPAND, 5 );
 	
 	nextButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("playbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );

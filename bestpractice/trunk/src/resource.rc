@@ -1,4 +1,4 @@
-aaaa ICON "wx/msw/std.ico"
+bpicon ICON "resource/bpicon.ico"
 prevbmp BITMAP "resource/prev.bmp"
 nextbmp BITMAP "resource/next.bmp"
 pausebmp BITMAP "resource/pause.bmp"
@@ -7,5 +7,46 @@ resetbmp BITMAP "resource/reset.bmp"
 forwardbmp BITMAP "resource/forward.bmp"
 rewindbmp BITMAP "resource/rewind.bmp"
 
+#ifdef __GNUC__ //VC++ adds its own manifest
+1 24 "bp.manifest"
+#endif
+
+#define wxUSE_NO_MANIFEST 1
 
 #include "wx/msw/wx.rc"
+#include "version.h"
+
+LANGUAGE 0, 0
+1 VERSIONINFO
+    FILEVERSION RC_FILEVERSION
+    PRODUCTVERSION RC_FILEVERSION
+    FILEOS VOS_NT_WINDOWS32
+    FILETYPE VFT_APP
+    FILESUBTYPE 0
+    BEGIN
+        BLOCK "StringFileInfo"
+            BEGIN
+            BLOCK "040904B0"
+                BEGIN
+                    //VALUE "CompanyName", ""
+                    VALUE "FileDescription", "BestPractice main executable"
+                    VALUE "FileVersion", RC_FILEVERSION_STRING
+                    VALUE "LegalCopyright", "2004-2009 R.J. Moerland"
+                    VALUE "ProductName", "BestPractice"
+                    VALUE "ProductVersion", RC_FILEVERSION_STRING
+                END
+            END
+            BLOCK "VarFileInfo"
+            BEGIN
+                /* The following line should only be modified for localized versions.     */
+                /* It consists of any number of WORD,WORD pairs, with each pair           */
+                /* describing a language,codepage combination supported by the file.      */
+                /*                                                                        */
+                /* For example, a file might have values "0x409,1252" indicating that it  */
+                /* supports English language (0x409) in the Windows ANSI codepage (1252). */
+
+            VALUE "Translation", 0x409, 1200
+
+    END
+
+    END
