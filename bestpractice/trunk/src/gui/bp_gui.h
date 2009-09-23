@@ -85,9 +85,11 @@ namespace bestpractice
 			wxStaticText* m_staticText23;
 			wxSlider* voiceSuppressionSlider;
 			wxStaticText* m_staticText241;
+			wxStaticLine* m_staticline31;
 			wxStaticText* m_staticText25;
 			wxSlider* bassPassThroughSlider;
 			wxStaticText* m_staticText26;
+			wxStaticLine* m_staticline4;
 			wxStaticText* m_staticText27;
 			wxSlider* treblePassThroughSlider;
 			wxStaticText* m_staticText28;

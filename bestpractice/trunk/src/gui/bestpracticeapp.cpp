@@ -25,7 +25,7 @@ using namespace bestpractice;
 bool BestPracticeApp::OnInit()
 {
     BpMainFrame* frame = new BpMainFrame(0L);
-    frame->SetIcon(wxICON(aaaa)); // To Set App Icon
+    frame->SetIcon(wxICON(bpicon)); // To Set App Icon
     frame->Show();
 
     return true;
