@@ -1,3 +1,11 @@
 aaaa ICON "wx/msw/std.ico"
+prevbmp BITMAP "resource/prev.bmp"
+nextbmp BITMAP "resource/next.bmp"
+pausebmp BITMAP "resource/pause.bmp"
+playbmp BITMAP "resource/play.bmp"
+resetbmp BITMAP "resource/reset.bmp"
+forwardbmp BITMAP "resource/forward.bmp"
+rewindbmp BITMAP "resource/rewind.bmp"
+
 
 #include "wx/msw/wx.rc"

@@ -47,8 +47,8 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	fgSizer9->Add( bSizer1, 1, wxEXPAND, 5 );
 	
-	songListCtrl = new wxListCtrl( m_panel4, wxID_ANY, wxDefaultPosition, wxSize( 200,100 ), wxLC_REPORT );
-	songListCtrl->SetMinSize( wxSize( 200,100 ) );
+	songListCtrl = new wxListCtrl( m_panel4, wxID_ANY, wxDefaultPosition, wxSize( 100,100 ), wxLC_REPORT );
+	songListCtrl->SetMinSize( wxSize( 100,100 ) );
 	
 	fgSizer9->Add( songListCtrl, 1, wxALL|wxEXPAND, 5 );
 	
@@ -60,7 +60,7 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	bSizer14->Add( 0, 0, 1, wxEXPAND, 5 );
 	
-	m_notebook2 = new wxNotebook( m_panel4, wxID_ANY, wxDefaultPosition, wxDefaultSize, 0 );
+	m_notebook2 = new wxNotebook( m_panel4, wxID_ANY, wxDefaultPosition, wxSize( -1,-1 ), 0 );
 	m_panel2 = new wxPanel( m_notebook2, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
 	wxBoxSizer* bSizer121;
 	bSizer121 = new wxBoxSizer( wxVERTICAL );
@@ -264,7 +264,7 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	bSizer10->Fit( m_panel3 );
 	m_notebook2->AddPage( m_panel3, _("Karaoke"), false );
 	
-	bSizer14->Add( m_notebook2, 0, wxALL, 5 );
+	bSizer14->Add( m_notebook2, 0, wxALL|wxEXPAND, 5 );
 	
 	fgSizer1->Add( bSizer14, 1, wxEXPAND|wxTOP|wxRIGHT, 5 );
 	
@@ -317,7 +317,7 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	rewindButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("rewindbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	bSizer3->Add( rewindButton, 0, wxALL|wxEXPAND, 5 );
 	
-	playButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("play2bmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	playButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("playbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	playButton->SetMinSize( wxSize( 40,-1 ) );
 	
 	playButton->SetMinSize( wxSize( 40,-1 ) );
