@@ -2914,7 +2914,7 @@
                                                 <property name="proportion">0</property>
                                                 <object class="wxBitmapButton" expanded="1">
                                                     <property name="bg"></property>
-                                                    <property name="bitmap">play2bmp; Load From Resource</property>
+                                                    <property name="bitmap">playbmp; Load From Resource</property>
                                                     <property name="context_help"></property>
                                                     <property name="default">0</property>
                                                     <property name="disabled"></property>
