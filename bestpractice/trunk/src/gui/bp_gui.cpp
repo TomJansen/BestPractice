@@ -38,11 +38,14 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	m_staticText1 = new wxStaticText( m_panel4, wxID_ANY, _("Title"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText1->Wrap( -1 );
 	m_staticText1->SetFont( wxFont( wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString ) );
+	m_staticText1->Hide();
 	
 	bSizer1->Add( m_staticText1, 0, wxALL, 5 );
 	
 	m_staticText11 = new wxStaticText( m_panel4, wxID_ANY, _("a title"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText11->Wrap( -1 );
+	m_staticText11->Hide();
+	
 	bSizer1->Add( m_staticText11, 1, wxALL, 5 );
 	
 	fgSizer9->Add( bSizer1, 1, wxEXPAND, 5 );
@@ -56,9 +59,6 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	wxBoxSizer* bSizer14;
 	bSizer14 = new wxBoxSizer( wxVERTICAL );
-	
-	
-	bSizer14->Add( 0, 0, 1, wxEXPAND, 5 );
 	
 	m_notebook2 = new wxNotebook( m_panel4, wxID_ANY, wxDefaultPosition, wxSize( -1,-1 ), 0 );
 	m_panel2 = new wxPanel( m_notebook2, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
@@ -174,7 +174,87 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	m_panel2->Layout();
 	bSizer121->Fit( m_panel2 );
 	m_notebook2->AddPage( m_panel2, _("Time && Pitch"), true );
-	m_panel3 = new wxPanel( m_notebook2, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	m_equalizerpanel = new wxPanel( m_notebook2, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	wxBoxSizer* bSizer101;
+	bSizer101 = new wxBoxSizer( wxVERTICAL );
+	
+	wxFlexGridSizer* fgSizer911;
+	fgSizer911 = new wxFlexGridSizer( 4, 1, 0, 0 );
+	fgSizer911->AddGrowableCol( 0 );
+	fgSizer911->SetFlexibleDirection( wxBOTH );
+	fgSizer911->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
+	
+	wxBoxSizer* bSizer111;
+	bSizer111 = new wxBoxSizer( wxVERTICAL );
+	
+	m_staticText221 = new wxStaticText( m_equalizerpanel, wxID_ANY, _("Balance"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText221->Wrap( -1 );
+	bSizer111->Add( m_staticText221, 0, wxTOP|wxRIGHT|wxLEFT|wxALIGN_CENTER_HORIZONTAL, 5 );
+	
+	wxBoxSizer* bSizer71;
+	bSizer71 = new wxBoxSizer( wxHORIZONTAL );
+	
+	m_staticText231 = new wxStaticText( m_equalizerpanel, wxID_ANY, _("Left"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText231->Wrap( -1 );
+	bSizer71->Add( m_staticText231, 0, wxALL, 5 );
+	
+	voiceSuppressionSlider1 = new wxSlider( m_equalizerpanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
+	bSizer71->Add( voiceSuppressionSlider1, 1, wxALL, 5 );
+	
+	m_staticText2411 = new wxStaticText( m_equalizerpanel, wxID_ANY, _("Right"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText2411->Wrap( -1 );
+	bSizer71->Add( m_staticText2411, 0, wxALL, 5 );
+	
+	bSizer111->Add( bSizer71, 1, wxEXPAND, 5 );
+	
+	fgSizer911->Add( bSizer111, 1, wxEXPAND, 5 );
+	
+	m_staticline311 = new wxStaticLine( m_equalizerpanel, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
+	fgSizer911->Add( m_staticline311, 0, wxALL|wxEXPAND, 5 );
+	
+	wxBoxSizer* bSizer25;
+	bSizer25 = new wxBoxSizer( wxHORIZONTAL );
+	
+	m_slider12 = new wxSlider( m_equalizerpanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_BOTH|wxSL_VERTICAL );
+	bSizer25->Add( m_slider12, 1, wxALL|wxEXPAND, 5 );
+	
+	m_slider13 = new wxSlider( m_equalizerpanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_BOTH|wxSL_VERTICAL );
+	bSizer25->Add( m_slider13, 1, wxALL|wxEXPAND, 5 );
+	
+	m_slider131 = new wxSlider( m_equalizerpanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_BOTH|wxSL_VERTICAL );
+	bSizer25->Add( m_slider131, 1, wxALL|wxEXPAND, 5 );
+	
+	m_slider132 = new wxSlider( m_equalizerpanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_BOTH|wxSL_VERTICAL );
+	bSizer25->Add( m_slider132, 1, wxALL|wxEXPAND, 5 );
+	
+	m_slider133 = new wxSlider( m_equalizerpanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_BOTH|wxSL_VERTICAL );
+	bSizer25->Add( m_slider133, 1, wxALL|wxEXPAND, 5 );
+	
+	fgSizer911->Add( bSizer25, 1, wxEXPAND, 5 );
+	
+	wxBoxSizer* bSizer23;
+	bSizer23 = new wxBoxSizer( wxHORIZONTAL );
+	
+	m_staticText35 = new wxStaticText( m_equalizerpanel, wxID_ANY, _("Bass"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText35->Wrap( -1 );
+	bSizer23->Add( m_staticText35, 1, wxALL|wxEXPAND, 5 );
+	
+	m_staticText36 = new wxStaticText( m_equalizerpanel, wxID_ANY, _("Treble"), wxDefaultPosition, wxDefaultSize, wxALIGN_RIGHT );
+	m_staticText36->Wrap( -1 );
+	bSizer23->Add( m_staticText36, 1, wxALL|wxEXPAND, 5 );
+	
+	fgSizer911->Add( bSizer23, 1, wxEXPAND, 5 );
+	
+	m_flatbtn = new wxButton( m_equalizerpanel, wxID_ANY, _("&Flat"), wxDefaultPosition, wxDefaultSize, 0 );
+	fgSizer911->Add( m_flatbtn, 0, wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
+	
+	bSizer101->Add( fgSizer911, 1, wxEXPAND|wxALL, 5 );
+	
+	m_equalizerpanel->SetSizer( bSizer101 );
+	m_equalizerpanel->Layout();
+	bSizer101->Fit( m_equalizerpanel );
+	m_notebook2->AddPage( m_equalizerpanel, _("Equalizer"), false );
+	m_karaokepanel = new wxPanel( m_notebook2, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
 	wxBoxSizer* bSizer10;
 	bSizer10 = new wxBoxSizer( wxVERTICAL );
 	
@@ -184,27 +264,27 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	fgSizer91->SetFlexibleDirection( wxBOTH );
 	fgSizer91->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
-	karaokeBox = new wxCheckBox( m_panel3, wxID_ANY, _("Karaoke mode"), wxDefaultPosition, wxDefaultSize, 0 );
+	karaokeBox = new wxCheckBox( m_karaokepanel, wxID_ANY, _("Karaoke mode"), wxDefaultPosition, wxDefaultSize, 0 );
 	fgSizer91->Add( karaokeBox, 1, wxALL, 5 );
 	
 	wxBoxSizer* bSizer11;
 	bSizer11 = new wxBoxSizer( wxVERTICAL );
 	
-	m_staticText22 = new wxStaticText( m_panel3, wxID_ANY, _("Slide for optimal vocal suppression"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText22 = new wxStaticText( m_karaokepanel, wxID_ANY, _("Slide for optimal vocal suppression"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText22->Wrap( -1 );
 	bSizer11->Add( m_staticText22, 0, wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	wxBoxSizer* bSizer7;
 	bSizer7 = new wxBoxSizer( wxHORIZONTAL );
 	
-	m_staticText23 = new wxStaticText( m_panel3, wxID_ANY, _("Left"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText23 = new wxStaticText( m_karaokepanel, wxID_ANY, _("Left"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText23->Wrap( -1 );
 	bSizer7->Add( m_staticText23, 0, wxALL, 5 );
 	
-	voiceSuppressionSlider = new wxSlider( m_panel3, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
+	voiceSuppressionSlider = new wxSlider( m_karaokepanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
 	bSizer7->Add( voiceSuppressionSlider, 1, wxALL, 5 );
 	
-	m_staticText241 = new wxStaticText( m_panel3, wxID_ANY, _("Right"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText241 = new wxStaticText( m_karaokepanel, wxID_ANY, _("Right"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText241->Wrap( -1 );
 	bSizer7->Add( m_staticText241, 0, wxALL, 5 );
 	
@@ -212,23 +292,23 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	fgSizer91->Add( bSizer11, 1, wxEXPAND, 5 );
 	
-	m_staticline31 = new wxStaticLine( m_panel3, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
+	m_staticline31 = new wxStaticLine( m_karaokepanel, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
 	fgSizer91->Add( m_staticline31, 0, wxALL|wxEXPAND, 5 );
 	
 	wxBoxSizer* bSizer12;
 	bSizer12 = new wxBoxSizer( wxVERTICAL );
 	
-	m_staticText25 = new wxStaticText( m_panel3, wxID_ANY, _("Bass pass-through frequency range"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText25 = new wxStaticText( m_karaokepanel, wxID_ANY, _("Bass pass-through frequency range"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText25->Wrap( -1 );
 	bSizer12->Add( m_staticText25, 0, wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	wxBoxSizer* bSizer8;
 	bSizer8 = new wxBoxSizer( wxHORIZONTAL );
 	
-	bassPassThroughSlider = new wxSlider( m_panel3, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
+	bassPassThroughSlider = new wxSlider( m_karaokepanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
 	bSizer8->Add( bassPassThroughSlider, 1, wxALL, 5 );
 	
-	m_staticText26 = new wxStaticText( m_panel3, wxID_ANY, _("0 Hz"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText26 = new wxStaticText( m_karaokepanel, wxID_ANY, _("0 Hz"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText26->Wrap( -1 );
 	bSizer8->Add( m_staticText26, 0, wxALL, 5 );
 	
@@ -236,23 +316,23 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	fgSizer91->Add( bSizer12, 1, wxEXPAND, 5 );
 	
-	m_staticline4 = new wxStaticLine( m_panel3, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
+	m_staticline4 = new wxStaticLine( m_karaokepanel, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_HORIZONTAL );
 	fgSizer91->Add( m_staticline4, 0, wxEXPAND | wxALL, 5 );
 	
 	wxBoxSizer* bSizer13;
 	bSizer13 = new wxBoxSizer( wxVERTICAL );
 	
-	m_staticText27 = new wxStaticText( m_panel3, wxID_ANY, _("Treble pass-through frequency range"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText27 = new wxStaticText( m_karaokepanel, wxID_ANY, _("Treble pass-through frequency range"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText27->Wrap( -1 );
 	bSizer13->Add( m_staticText27, 0, wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	wxBoxSizer* bSizer93;
 	bSizer93 = new wxBoxSizer( wxHORIZONTAL );
 	
-	treblePassThroughSlider = new wxSlider( m_panel3, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
+	treblePassThroughSlider = new wxSlider( m_karaokepanel, wxID_ANY, 50, 0, 100, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
 	bSizer93->Add( treblePassThroughSlider, 1, wxALL, 5 );
 	
-	m_staticText28 = new wxStaticText( m_panel3, wxID_ANY, _("0 Hz"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText28 = new wxStaticText( m_karaokepanel, wxID_ANY, _("0 Hz"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_staticText28->Wrap( -1 );
 	bSizer93->Add( m_staticText28, 0, wxALL, 5 );
 	
@@ -262,10 +342,10 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	bSizer10->Add( fgSizer91, 1, wxEXPAND|wxALL, 5 );
 	
-	m_panel3->SetSizer( bSizer10 );
-	m_panel3->Layout();
-	bSizer10->Fit( m_panel3 );
-	m_notebook2->AddPage( m_panel3, _("Karaoke"), false );
+	m_karaokepanel->SetSizer( bSizer10 );
+	m_karaokepanel->Layout();
+	bSizer10->Fit( m_karaokepanel );
+	m_notebook2->AddPage( m_karaokepanel, _("Karaoke"), false );
 	
 	bSizer14->Add( m_notebook2, 0, wxALL|wxEXPAND, 5 );
 	
@@ -363,11 +443,8 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	fgSizer8->SetFlexibleDirection( wxBOTH );
 	fgSizer8->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
-	m_staticText24 = new wxStaticText( m_panel4, wxID_ANY, _("Loop Controls"), wxDefaultPosition, wxDefaultSize, 0 );
-	m_staticText24->Wrap( -1 );
-	m_staticText24->SetFont( wxFont( wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString ) );
-	
-	fgSizer8->Add( m_staticText24, 0, wxTOP|wxBOTTOM|wxRIGHT, 5 );
+	LoopOnCheckBox = new wxCheckBox( m_panel4, wxID_ANY, _("Looping"), wxDefaultPosition, wxDefaultSize, 0 );
+	fgSizer8->Add( LoopOnCheckBox, 0, wxALL, 5 );
 	
 	wxFlexGridSizer* fgSizer3;
 	fgSizer3 = new wxFlexGridSizer( 3, 9, 0, 0 );
@@ -529,10 +606,27 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	this->SetMenuBar( main_menubar );
 	
+	
+	// Connect Events
+	m_flatbtn->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::FlatBtnClick ), NULL, this );
+	this->Connect( openFileMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::OpenFile ) );
+	this->Connect( openDiscMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::OpenDisc ) );
+	this->Connect( saveAsMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::SaveAs ) );
+	this->Connect( saveLoopPointsMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::SaveLoopPoints ) );
+	this->Connect( checkCddbDatabaseMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::CheckCDDB ) );
+	this->Connect( aboutMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::AboutMenu ) );
 }
 
 BpMainFrameBase::~BpMainFrameBase()
 {
+	// Disconnect Events
+	m_flatbtn->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::FlatBtnClick ), NULL, this );
+	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::OpenFile ) );
+	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::OpenDisc ) );
+	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::SaveAs ) );
+	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::SaveLoopPoints ) );
+	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::CheckCDDB ) );
+	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::AboutMenu ) );
 }
 
 BpAboutDlgBase::BpAboutDlgBase( wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style ) : wxDialog( parent, id, title, pos, size, style )
