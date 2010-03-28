@@ -60,7 +60,6 @@ namespace bestpractice
 			wxStaticText* m_staticText1;
 			wxStaticText* m_staticText11;
 			wxListCtrl* songListCtrl;
-			
 			wxNotebook* m_notebook2;
 			wxPanel* m_panel2;
 			wxStaticText* m_staticText16;
@@ -79,7 +78,21 @@ namespace bestpractice
 			wxSlider* speedSlider;
 			wxBitmapButton* m_bpButton52;
 			wxStaticText* m_staticText192;
-			wxPanel* m_panel3;
+			wxPanel* m_equalizerpanel;
+			wxStaticText* m_staticText221;
+			wxStaticText* m_staticText231;
+			wxSlider* voiceSuppressionSlider1;
+			wxStaticText* m_staticText2411;
+			wxStaticLine* m_staticline311;
+			wxSlider* m_slider12;
+			wxSlider* m_slider13;
+			wxSlider* m_slider131;
+			wxSlider* m_slider132;
+			wxSlider* m_slider133;
+			wxStaticText* m_staticText35;
+			wxStaticText* m_staticText36;
+			wxButton* m_flatbtn;
+			wxPanel* m_karaokepanel;
 			wxCheckBox* karaokeBox;
 			wxStaticText* m_staticText22;
 			wxStaticText* m_staticText23;
@@ -105,7 +118,7 @@ namespace bestpractice
 			wxBitmapButton* pauseButton;
 			wxBitmapButton* forwardButton;
 			wxBitmapButton* nextButton;
-			wxStaticText* m_staticText24;
+			wxCheckBox* LoopOnCheckBox;
 			
 			wxStaticText* m_staticText3;
 			
@@ -138,6 +151,16 @@ namespace bestpractice
 			wxMenu* actionsMenu;
 			wxMenu* languageMenu;
 			wxMenu* helpMenu;
+			
+			// Virtual event handlers, overide them in your derived class
+			virtual void FlatBtnClick( wxCommandEvent& event ) { event.Skip(); }
+			virtual void OpenFile( wxCommandEvent& event ) { event.Skip(); }
+			virtual void OpenDisc( wxCommandEvent& event ) { event.Skip(); }
+			virtual void SaveAs( wxCommandEvent& event ) { event.Skip(); }
+			virtual void SaveLoopPoints( wxCommandEvent& event ) { event.Skip(); }
+			virtual void CheckCDDB( wxCommandEvent& event ) { event.Skip(); }
+			virtual void AboutMenu( wxCommandEvent& event ) { event.Skip(); }
+			
 		
 		public:
 			
