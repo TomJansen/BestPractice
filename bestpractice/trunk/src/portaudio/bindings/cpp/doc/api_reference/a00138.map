@@ -1,0 +1,22 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,770,556"];
+	Node1 [label="{portaudio::CallbackStream\n||+ cpuLoad()\l# CallbackStream()\l# ~CallbackStream()\l- CallbackStream()\l- operator=()\l}", height="1.33", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="355,212", rects="286,244,424,260 286,228,424,244 286,164,424,228"];
+	Node2 [label="{portaudio::Stream\n|# stream_\l|+ ~Stream()\l+ close()\l+ isOpen()\l+ setStreamFinishedCallback()\l+ start()\l+ stop()\l+ abort\
+()\l+ isStopped()\l+ isActive()\l+ inputLatency()\l+ outputLatency()\l+ sampleRate()\l+ time()\l+ paStream()\l+ paStream()\l# St\
+ream()\l- Stream()\l- operator=()\l}", height="3.50", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00020.html", tooltip="A Stream represents an active or inactive input and/or output data stream in the...", pos="355,422", rects="276,532,435,548 276,516,435,532 276,296,435,516"];
+	Node3 [label="{portaudio::CFunCallbackStream\n||+ CFunCallbackStream()\l+ CFunCallbackStream()\l+ ~CFunCallbackStream()\l+ open()\l- CFunCallb\
+ackStream()\l- operator=()\l}", height="1.50", width="2.28", color=black, fillcolor=white, style=filled, URL="$a00006.html", tooltip="Callback stream using a free function with C linkage. It&#39;s important that the...", pos="82,68", rects="0,106,165,122 0,90,165,106 0,14,165,90"];
+	Node4 [label="{portaudio::FunCallbackStream\n|- adapterData_\l|+ FunCallbackStream()\l+ FunCallbackStream()\l+ ~FunCallbackStream()\l+ open()\\
+l- FunCallbackStream()\l- operator=()\l- open()\l}", height="1.67", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00012.html", tooltip="Callback stream using a C++ function (either a free function or a static function)...", pos="261,68", rects="182,112,340,128 182,96,340,112 182,8,340,96"];
+	Node5 [label="{portaudio::InterfaceCallbackStream\n||+ InterfaceCallbackStream()\l+ InterfaceCallbackStream()\l+ ~InterfaceCallbackStream()\l+\
+ open()\l- InterfaceCallbackStream()\l- operator=()\l}", height="1.50", width="2.53", color=black, fillcolor=white, style=filled, URL="$a00015.html", tooltip="Callback stream using an instance of an object that&#39;s derived from the CallbackInterface...", pos="449,68", rects="358,106,540,122 358,90,540,106 358,14,540,90"];
+	Node6 [label="{portaudio::MemFunCallbackStream\< T \>\n|- adapter_\l|+ MemFunCallbackStream()\l+ MemFunCallbackStream()\l+ ~MemFunCallbackStre\
+am()\l+ open()\l- MemFunCallbackStream()\l- operator=()\l- open()\l}", height="1.67", width="2.94", color=black, fillcolor=white, style=filled, URL="$a00016.html", tooltip="Callback stream using a class&#39;s member function as a callback. Template argument...", pos="664,68", rects="558,112,770,128 558,96,770,112 558,8,770,96"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,355,296 355,286 355,276 355,268 355,260"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,286,164 277,160 233,141 213,150 165,128 162,126 158,124 155,122"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,323,164 317,155 312,146 306,137 300,128"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,387,164 393,155 400,144 407,133 414,122"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,424,164 433,160 482,139 503,150 558,128"];
+}

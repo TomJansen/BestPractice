@@ -1,0 +1,25 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,770,616"];
+	Node1 [label="{portaudio::Stream\n|# stream_\l|+ ~Stream()\l+ close()\l+ isOpen()\l+ setStreamFinishedCallback()\l+ start()\l+ stop()\l+ abort\
+()\l+ isStopped()\l+ isActive()\l+ inputLatency()\l+ outputLatency()\l+ sampleRate()\l+ time()\l+ paStream()\l+ paStream()\l# St\
+ream()\l- Stream()\l- operator=()\l}", height="3.50", width="2.19", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="277,482", rects="198,592,357,608 198,576,357,592 198,356,357,576"];
+	Node2 [label="{portaudio::BlockingStream\n||+ BlockingStream()\l+ BlockingStream()\l+ ~BlockingStream()\l+ open()\l+ read()\l+ write()\l+ avai\
+lableReadSize()\l+ availableWriteSize()\l- BlockingStream()\l- operator=()\l}", height="2.17", width="1.92", color=black, fillcolor=white, style=filled, URL="$a00003.html", tooltip="Stream class for blocking read/write-style input and output.", pos="199,242", rects="130,304,269,320 130,288,269,304 130,164,269,288"];
+	Node3 [label="{portaudio::CallbackStream\n||+ cpuLoad()\l# CallbackStream()\l# ~CallbackStream()\l- CallbackStream()\l- operator=()\l}", height="1.33", width="1.92", color=black, fillcolor=white, style=filled, URL="$a00005.html", tooltip="Base class for all Streams which use a callback-based mechanism.", pos="355,242", rects="286,274,424,290 286,258,424,274 286,194,424,258"];
+	Node4 [label="{portaudio::CFunCallbackStream\n||+ CFunCallbackStream()\l+ CFunCallbackStream()\l+ ~CFunCallbackStream()\l+ open()\l- CFunCallb\
+ackStream()\l- operator=()\l}", height="1.50", width="2.28", color=black, fillcolor=white, style=filled, URL="$a00006.html", tooltip="Callback stream using a free function with C linkage. It&#39;s important that the...", pos="82,68", rects="0,106,165,122 0,90,165,106 0,14,165,90"];
+	Node5 [label="{portaudio::FunCallbackStream\n|- adapterData_\l|+ FunCallbackStream()\l+ FunCallbackStream()\l+ ~FunCallbackStream()\l+ open()\\
+l- FunCallbackStream()\l- operator=()\l- open()\l}", height="1.67", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00012.html", tooltip="Callback stream using a C++ function (either a free function or a static function)...", pos="261,68", rects="182,112,340,128 182,96,340,112 182,8,340,96"];
+	Node6 [label="{portaudio::InterfaceCallbackStream\n||+ InterfaceCallbackStream()\l+ InterfaceCallbackStream()\l+ ~InterfaceCallbackStream()\l+\
+ open()\l- InterfaceCallbackStream()\l- operator=()\l}", height="1.50", width="2.53", color=black, fillcolor=white, style=filled, URL="$a00015.html", tooltip="Callback stream using an instance of an object that&#39;s derived from the CallbackInterface...", pos="449,68", rects="358,106,540,122 358,90,540,106 358,14,540,90"];
+	Node7 [label="{portaudio::MemFunCallbackStream\< T \>\n|- adapter_\l|+ MemFunCallbackStream()\l+ MemFunCallbackStream()\l+ ~MemFunCallbackStre\
+am()\l+ open()\l- MemFunCallbackStream()\l- operator=()\l- open()\l}", height="1.67", width="2.94", color=black, fillcolor=white, style=filled, URL="$a00016.html", tooltip="Callback stream using a class&#39;s member function as a callback. Template argument...", pos="664,68", rects="558,112,770,128 558,96,770,112 558,8,770,96"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,236,356 233,347 230,338 227,329 224,320"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,318,356 321,346 328,326 334,306 339,290"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,320,194 313,187 305,178 296,170 286,164 238,133 215,152 165,128 162,126 158,124 155,122"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,329,194 325,186 315,167 303,147 293,128"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,381,194 386,185 397,165 409,142 420,122"];
+	Node3 -> Node7 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,389,194 396,186 405,178 414,170 424,164 476,131 500,151 558,128"];
+}

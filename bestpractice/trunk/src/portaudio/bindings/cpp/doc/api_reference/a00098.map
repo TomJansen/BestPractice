@@ -1,0 +1,10 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,272,84"];
+	Node1 [label="MemFunCallbackStream.hxx", height="0.22", width="2.14", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="148,68", rects="71,60,226,76"];
+	Node2 [label="MemFunCallbackStream.cxx", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$a00046.html", pos="76,16", rects="0,8,153,24"];
+	Node3 [label="PortAudioCpp.hxx", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$a00048.html", pos="221,16", rects="170,8,273,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,137,60 130,55 116,45 99,32 87,24"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,159,60 166,55 180,45 198,32 209,24"];
+}

@@ -1,0 +1,11 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,158,460"];
+	Node1 [label="{portaudio::BlockingStream\n||+ BlockingStream()\l+ BlockingStream()\l+ ~BlockingStream()\l+ open()\l+ read()\l+ write()\l+ avai\
+lableReadSize()\l+ availableWriteSize()\l- BlockingStream()\l- operator=()\l}", height="2.17", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,86", rects="10,148,149,164 10,132,149,148 10,8,149,132"];
+	Node2 [label="{portaudio::Stream\n|# stream_\l|+ ~Stream()\l+ close()\l+ isOpen()\l+ setStreamFinishedCallback()\l+ start()\l+ stop()\l+ abort\
+()\l+ isStopped()\l+ isActive()\l+ inputLatency()\l+ outputLatency()\l+ sampleRate()\l+ time()\l+ paStream()\l+ paStream()\l# St\
+ream()\l- Stream()\l- operator=()\l}", height="3.50", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00020.html", tooltip="A Stream represents an active or inactive input and/or output data stream in the...", pos="79,326", rects="0,436,159,452 0,420,159,436 0,200,159,420"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,79,200 79,189 79,181 79,172 79,164"];
+}

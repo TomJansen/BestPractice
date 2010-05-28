@@ -1,0 +1,15 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,401,136"];
+	Node1 [label="InterfaceCallbackStream.hxx", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="245,120", rects="169,112,321,128"];
+	Node2 [label="InterfaceCallbackStream.cxx", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$a00044.html", pos="75,68", rects="0,60,151,76"];
+	Node3 [label="MemFunCallbackStream.hxx", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$a00047.html", pos="245,68", rects="168,60,323,76"];
+	Node4 [label="MemFunCallbackStream.cxx", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$a00046.html", pos="205,16", rects="129,8,282,24"];
+	Node5 [label="PortAudioCpp.hxx", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$a00048.html", pos="350,16", rects="299,8,402,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,219,112 211,109 178,99 130,85 101,76"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,245,112 245,103 245,94 245,83 245,76"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,239,60 234,53 227,43 217,32 211,24"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,261,60 269,56 289,46 316,33 334,24"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,273,112 281,109 298,102 318,91 331,76 344,60 348,37 349,24"];
+}

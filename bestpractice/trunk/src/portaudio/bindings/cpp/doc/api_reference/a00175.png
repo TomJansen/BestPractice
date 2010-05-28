@@ -1,0 +1,13 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,182,536"];
+	Node1 [label="{portaudio::System::DeviceIterator\n|- ptr_\l|+ operator*()\l+ operator-\>()\l+ operator++()\l+ operator++()\l+ operator--()\l+ \
+operator--()\l+ operator==()\l+ operator!=()\l}", height="1.83", width="2.33", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,74", rects="7,124,175,140 7,108,175,124 7,8,175,108"];
+	Node2 [label="{portaudio::Device\n|- index_\l- info_\l|+ index()\l+ name()\l+ maxInputChannels()\l+ maxOutputChannels()\l+ defaultLowInputLate\
+ncy()\l+ defaultHighInputLatency()\l+ defaultLowOutputLatency()\l+ defaultHighOutputLatency()\l+ defaultSampleRate()\l+ isInputO\
+nlyDevice()\l+ isOutputOnlyDevice()\l+ isFullDuplexDevice()\l+ isSystemDefaultInputDevice()\l+ isSystemDefaultOutputDevice()\l+ \
+isHostApiDefaultInputDevice()\l+ isHostApiDefaultOutputDevice()\l+ operator==()\l+ operator!=()\l+ hostApi()\l+ hostApi()\l- Dev\
+ice()\l- ~Device()\l- Device()\l- operator=()\l}", height="4.67", width="2.53", color=black, fillcolor=white, style=filled, URL="$a00008.html", tooltip="Class which represents a PortAudio device in the System.", pos="91,360", rects="0,512,183,528 0,484,183,512 0,192,183,484"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=ptr_, arrowtail=open, pos="s,91,192 91,192 91,174 91,156 91,140", lp="107,166"];
+}

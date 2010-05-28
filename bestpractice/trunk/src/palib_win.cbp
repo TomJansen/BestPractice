@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="portaudio_win" />
+		<Option platforms="Windows;" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output="libportaudio_win" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Debug\libpa_win" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option platforms="Windows;" />
+				<Option output="libportaudio_win" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj\Release\libpa_win" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DPA_NO_ASIO" />
+			<Add option="-DPA_NO_DS" />
+			<Add directory="portaudio\include" />
+			<Add directory="portaudio\src\common" />
+			<Add directory="portaudio\src\hostapi\wmme" />
+			<Add directory="portaudio\src\os\win" />
+		</Compiler>
+		<Unit filename="portaudio\src\common\pa_allocation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_allocation.h" />
+		<Unit filename="portaudio\src\common\pa_converters.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_converters.h" />
+		<Unit filename="portaudio\src\common\pa_cpuload.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_cpuload.h" />
+		<Unit filename="portaudio\src\common\pa_debugprint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_debugprint.h" />
+		<Unit filename="portaudio\src\common\pa_dither.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_dither.h" />
+		<Unit filename="portaudio\src\common\pa_endianness.h" />
+		<Unit filename="portaudio\src\common\pa_front.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_hostapi.h" />
+		<Unit filename="portaudio\src\common\pa_process.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_process.h" />
+		<Unit filename="portaudio\src\common\pa_ringbuffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_ringbuffer.h" />
+		<Unit filename="portaudio\src\common\pa_skeleton.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_stream.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_stream.h" />
+		<Unit filename="portaudio\src\common\pa_trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\common\pa_trace.h" />
+		<Unit filename="portaudio\src\common\pa_types.h" />
+		<Unit filename="portaudio\src\common\pa_util.h" />
+		<Unit filename="portaudio\src\hostapi\wmme\pa_win_wmme.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\os\win\pa_win_hostapis.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\os\win\pa_win_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="portaudio\src\os\win\pa_win_waveformat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+			</AutoVersioning>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

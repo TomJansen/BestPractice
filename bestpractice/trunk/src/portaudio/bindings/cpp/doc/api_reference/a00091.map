@@ -1,0 +1,11 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,172,136"];
+	Node1 [label="HostApi.hxx", height="0.22", width="1.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="57,120", rects="21,112,93,128"];
+	Node2 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="57,16", rects="25,8,90,24"];
+	Node3 [label="portaudiocpp/System.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00055.html", pos="105,68", rects="38,60,172,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,49,24 50,112 43,104 33,90 29,76 24,59 34,42 44,30"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,97,76 65,112 72,104 82,92 91,83"];
+	Node3 -> Node2 [color=midnightblue, style=solid, pos="e,65,24 98,60 91,52 80,40 71,31"];
+}

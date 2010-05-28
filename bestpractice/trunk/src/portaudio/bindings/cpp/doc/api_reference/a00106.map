@@ -1,0 +1,19 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,484,188"];
+	Node1 [label="StreamParameters.hxx", height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="92,172", rects="32,164,152,180"];
+	Node2 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="126,16", rects="94,8,159,24"];
+	Node3 [label="portaudiocpp/DirectionSpecificStreamParameters.hxx", height="0.22", width="3.78", color=black, fillcolor=white, style=filled, URL="$a00039.html", pos="174,120", rects="38,112,311,128"];
+	Node4 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="98,68", rects="76,60,121,76"];
+	Node5 [label="portaudiocpp/System.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00055.html", pos="205,68", rects="138,60,272,76"];
+	Node6 [label="portaudiocpp/SampleDataFormat.hxx", height="0.22", width="2.69", color=black, fillcolor=white, style=filled, URL="$a00049.html", pos="387,68", rects="290,60,485,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,104,24 72,164 57,157 38,145 29,128 26,121 28,118 29,112 41,69 52,55 89,32 92,31 93,30 94,29"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,161,128 105,164 118,156 138,143 154,133"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,110,76 162,112 150,104 131,91 117,81"];
+	Node3 -> Node2 [color=midnightblue, style=solid, pos="e,107,24 125,112 103,106 80,95 67,76 55,57 78,39 99,28"];
+	Node3 -> Node5 [color=midnightblue, style=solid, pos="e,200,76 179,112 184,104 190,93 195,84"];
+	Node5 -> Node2 [color=midnightblue, style=solid, pos="e,138,24 193,60 180,52 160,39 145,29"];
+	Node3 -> Node6 [color=midnightblue, style=solid, pos="e,354,76 207,112 244,103 305,88 346,78"];
+	Node6 -> Node2 [color=midnightblue, style=solid, pos="e,159,24 343,60 299,51 229,38 168,26"];
+}

@@ -1,0 +1,17 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,182,804"];
+	Node1 [label="{portaudio::System::HostApiIterator\n|- ptr_\l|+ operator*()\l+ operator-\>()\l+ operator++()\l+ operator++()\l+ operator--()\l+\
+ operator--()\l+ operator==()\l+ operator!=()\l}", height="1.83", width="2.44", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,74", rects="3,124,179,140 3,108,179,124 3,8,179,108"];
+	Node2 [label="{portaudio::HostApi\n|- info_\l- devices_\l|+ typeId()\l+ index()\l+ name()\l+ deviceCount()\l+ devicesBegin()\l+ devicesEnd()\l\
++ defaultInputDevice()\l+ defaultOutputDevice()\l+ operator==()\l+ operator!=()\l- HostApi()\l- ~HostApi()\l- HostApi()\l- opera\
+tor=()\l}", height="3.00", width="1.81", color=black, fillcolor=white, style=filled, URL="$a00013.html", tooltip="HostApi represents a host API (usually type of driver) in the System.", pos="91,300", rects="26,392,157,408 26,364,157,392 26,192,157,364"];
+	Node3 [label="{portaudio::Device\n|- index_\l- info_\l|+ index()\l+ name()\l+ maxInputChannels()\l+ maxOutputChannels()\l+ defaultLowInputLate\
+ncy()\l+ defaultHighInputLatency()\l+ defaultLowOutputLatency()\l+ defaultHighOutputLatency()\l+ defaultSampleRate()\l+ isInputO\
+nlyDevice()\l+ isOutputOnlyDevice()\l+ isFullDuplexDevice()\l+ isSystemDefaultInputDevice()\l+ isSystemDefaultOutputDevice()\l+ \
+isHostApiDefaultInputDevice()\l+ isHostApiDefaultOutputDevice()\l+ operator==()\l+ operator!=()\l+ hostApi()\l+ hostApi()\l- Dev\
+ice()\l- ~Device()\l- Device()\l- operator=()\l}", height="4.67", width="2.53", color=black, fillcolor=white, style=filled, URL="$a00008.html", tooltip="Class which represents a PortAudio device in the System.", pos="91,628", rects="0,780,183,796 0,752,183,780 0,460,183,752"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=ptr_, arrowtail=open, pos="s,91,192 91,192 91,174 91,156 91,140", lp="107,166"];
+	Node3 -> Node2 [dir=back, color=darkorchid3, style=dashed, label=devices_, arrowtail=open, pos="s,91,460 91,460 91,442 91,425 91,408", lp="117,434"];
+}

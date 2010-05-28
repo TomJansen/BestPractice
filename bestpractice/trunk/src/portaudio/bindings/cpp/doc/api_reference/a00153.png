@@ -1,0 +1,9 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,134,256"];
+	Node1 [label="{portaudio::PaException\n|- error_\l|+ PaException()\l+ what()\l+ paError()\l+ paErrorText()\l+ isHostApiError()\l+ lastHostApiE\
+rror()\l+ lastHostApiErrorText()\l+ operator==()\l+ operator!=()\l}", height="2.00", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="67,80", rects="0,136,134,152 0,120,134,136 0,8,134,120"];
+	Node2 [label="{portaudio::Exception\n||+ ~Exception()\l+ what()\l}", height="0.83", width="1.50", color=black, fillcolor=white, style=filled, URL="$a00011.html", tooltip="Base class for all exceptions PortAudioCpp can throw.", pos="67,218", rects="13,232,122,248 13,216,122,232 13,188,122,216"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,67,188 67,178 67,170 67,161 67,152"];
+}

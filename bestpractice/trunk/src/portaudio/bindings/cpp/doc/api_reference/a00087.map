@@ -1,0 +1,12 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,148,136"];
+	Node1 [label="Exception.cxx", height="0.22", width="1.08", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="74,120", rects="35,112,113,128"];
+	Node2 [label="portaudiocpp/Exception.hxx", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$a00041.html", pos="74,68", rects="0,60,148,76"];
+	Node3 [label=exception, height="0.22", width="0.78", color=grey75, fillcolor=white, style=filled, pos="35,16", rects="7,8,63,24"];
+	Node4 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="113,16", rects="81,8,146,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,74,76 74,112 74,105 74,94 74,85"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,41,24 68,60 63,52 54,41 47,31"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,107,24 80,60 85,52 94,41 101,31"];
+}

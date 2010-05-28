@@ -1,0 +1,15 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,232,644"];
+	Node1 [label="{portaudio::StreamParameters\n|- inputParameters_\l- outputParameters_\l- sampleRate_\l- framesPerBuffer_\l- flags_\l|+ StreamPa\
+rameters()\l+ StreamParameters()\l+ setInputParameters()\l+ setOutputParameters()\l+ setSampleRate()\l+ setFramesPerBuffer()\l+ \
+setFlag()\l+ unsetFlag()\l+ clearFlags()\l+ isSupported()\l+ inputParameters()\l+ inputParameters()\l+ outputParameters()\l+ out\
+putParameters()\l+ sampleRate()\l+ framesPerBuffer()\l+ flags()\l+ isFlagSet()\l}", height="4.17", width="2.06", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="116,158", rects="42,292,191,308 42,228,191,292 42,8,191,228"];
+	Node2 [label="{portaudio::DirectionSpecificStreamParameters\n|- paStreamParameters_\l|+ DirectionSpecificStreamParameters()\l+ DirectionSpecif\
+icStreamParameters()\l+ setDevice()\l+ setNumChannels()\l+ setSampleFormat()\l+ setHostApiSpecificSampleFormat()\l+ setSuggested\
+Latency()\l+ setHostApiSpecificStreamInfo()\l+ paStreamParameters()\l+ paStreamParameters()\l+ device()\l+ numChannels()\l+ samp\
+leFormat()\l+ isSampleFormatInterleaved()\l+ isSampleFormatHostApiSpecific()\l+ hostApiSpecificSampleFormat()\l+ suggestedLatenc\
+y()\l+ hostApiSpecificStreamInfo()\l+ null()\l}", height="3.67", width="3.22", color=black, fillcolor=white, style=filled, URL="$a00010.html", tooltip="All parameters for one direction (either in or out) of a Stream. Together with parameters...", pos="116,504", rects="0,620,233,636 0,604,233,620 0,372,233,604"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label="inputParameters_\noutputParameters_", arrowtail=open, pos="s,116,372 116,372 116,351 116,329 116,308", lp="168,340"];
+}

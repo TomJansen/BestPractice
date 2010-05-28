@@ -1,0 +1,10 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,158,400"];
+	Node1 [label="{portaudio::CallbackStream\n||+ cpuLoad()\l# CallbackStream()\l# ~CallbackStream()\l- CallbackStream()\l- operator=()\l}", height="1.33", width="1.92", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="79,56", rects="10,88,148,104 10,72,148,88 10,8,148,72"];
+	Node2 [label="{portaudio::Stream\n|# stream_\l|+ ~Stream()\l+ close()\l+ isOpen()\l+ setStreamFinishedCallback()\l+ start()\l+ stop()\l+ abort\
+()\l+ isStopped()\l+ isActive()\l+ inputLatency()\l+ outputLatency()\l+ sampleRate()\l+ time()\l+ paStream()\l+ paStream()\l# St\
+ream()\l- Stream()\l- operator=()\l}", height="3.50", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00020.html", tooltip="A Stream represents an active or inactive input and/or output data stream in the...", pos="79,266", rects="0,376,159,392 0,360,159,376 0,140,159,360"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,79,140 79,130 79,120 79,112 79,104"];
+}

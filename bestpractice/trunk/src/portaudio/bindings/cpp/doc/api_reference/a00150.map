@@ -1,0 +1,11 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,294,256"];
+	Node1 [label="{portaudio::Exception\n||+ ~Exception()\l+ what()\l}", height="0.83", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="149,218", rects="95,232,204,248 95,216,204,232 95,188,204,216"];
+	Node2 [label="{portaudio::PaCppException\n|- specifier_\l|+ PaCppException()\l+ what()\l+ specifier()\l+ operator==()\l+ operator!=()\l}", height="1.33", width="1.97", color=black, fillcolor=white, style=filled, URL="$a00018.html", tooltip="Exceptions specific to PortAudioCpp (ie. exceptions which do not have an equivalent...", pos="71,80", rects="0,112,142,128 0,96,142,112 0,32,142,96"];
+	Node3 [label="{portaudio::PaException\n|- error_\l|+ PaException()\l+ what()\l+ paError()\l+ paErrorText()\l+ isHostApiError()\l+ lastHostApiE\
+rror()\l+ lastHostApiErrorText()\l+ operator==()\l+ operator!=()\l}", height="2.00", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00019.html", tooltip="Wrapper for PortAudio error codes to C++ exceptions.", pos="227,80", rects="160,136,294,152 160,120,294,136 160,8,294,120"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,132,188 127,179 118,163 107,145 98,128"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,166,188 170,180 175,171 181,162 186,152"];
+}

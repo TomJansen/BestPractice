@@ -1,0 +1,33 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,1411,136"];
+	Node1 [label="Exception.hxx", height="0.22", width="1.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="749,120", rects="709,112,789,128"];
+	Node2 [label="AsioDeviceAdapter.cxx", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$a00023.html", pos="62,68", rects="0,60,125,76"];
+	Node3 [label="BlockingStream.cxx", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$a00026.html", pos="196,68", rects="142,60,250,76"];
+	Node4 [label="CFunCallbackStream.cxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00032.html", pos="335,68", rects="268,60,402,76"];
+	Node5 [label="CppFunCallbackStream.cxx", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$a00034.html", pos="493,68", rects="420,60,567,76"];
+	Node6 [label="Device.cxx", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$a00036.html", pos="615,68", rects="584,60,646,76"];
+	Node7 [label="Exception.cxx", height="0.22", width="1.08", color=black, fillcolor=white, style=filled, URL="$a00040.html", pos="703,68", rects="664,60,742,76"];
+	Node8 [label="HostApi.cxx", height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$a00042.html", pos="795,68", rects="760,60,830,76"];
+	Node9 [label="InterfaceCallbackStream.cxx", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$a00044.html", pos="923,68", rects="848,60,999,76"];
+	Node10 [label="Stream.cxx", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$a00050.html", pos="1047,68", rects="1016,60,1079,76"];
+	Node11 [label="System.cxx", height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$a00054.html", pos="1128,68", rects="1096,60,1160,76"];
+	Node12 [label="MemFunCallbackStream.hxx", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$a00047.html", pos="1255,68", rects="1178,60,1333,76"];
+	Node13 [label="MemFunCallbackStream.cxx", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$a00046.html", pos="1215,16", rects="1139,8,1292,24"];
+	Node14 [label="PortAudioCpp.hxx", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$a00048.html", pos="1360,16", rects="1309,8,1412,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,709,112 701,111 449,78 380,100 125,76"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,709,112 701,111 505,83 450,99 250,76"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,709,112 701,111 572,90 535,92 402,76"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,710,112 701,110 653,100 578,85 533,76"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,728,112 720,109 695,99 658,85 636,76"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,742,112 736,105 727,96 717,84 710,76"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,756,112 762,105 771,96 781,84 788,76"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,776,112 785,109 819,99 866,85 896,76"];
+	Node1 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,789,112 798,110 891,93 918,95 1016,76"];
+	Node1 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,789,112 798,111 926,90 963,99 1096,76"];
+	Node1 -> Node12 [dir=back, color=midnightblue, style=solid, pos="s,790,112 799,111 962,86 1008,92 1178,76"];
+	Node12 -> Node13 [dir=back, color=midnightblue, style=solid, pos="s,1249,60 1244,53 1237,43 1227,32 1221,24"];
+	Node12 -> Node14 [dir=back, color=midnightblue, style=solid, pos="s,1271,60 1279,56 1299,46 1326,33 1344,24"];
+	Node1 -> Node14 [dir=back, color=midnightblue, style=solid, pos="s,789,112 798,111 885,104 1294,112 1341,76 1357,63 1360,37 1360,24"];
+}

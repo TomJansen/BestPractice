@@ -1,0 +1,7 @@
+digraph G {
+	graph [rankdir=LR];
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,250,16"];
+	Node1 [label="portaudio::DirectionSpecificStreamParameters", height="0.22", width="3.22", color=black, fillcolor=white, style=filled, URL="$a00010.html", tooltip="All parameters for one direction (either in or out) of a Stream. Together with parameters...", pos="125,8", rects="9,0,242,16"];
+}

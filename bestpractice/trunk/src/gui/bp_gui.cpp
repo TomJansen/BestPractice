@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version Aug 25 2009)
+// C++ code generated with wxFormBuilder (version Feb 17 2010)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO "NOT" EDIT THIS FILE!
@@ -81,8 +81,8 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	pitchSlider = new wxSlider( m_panel2, wxID_ANY, 0, -12, 12, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
 	bSizer9->Add( pitchSlider, 1, wxALL, 5 );
 	
-	m_bpButton5 = new wxBitmapButton( m_panel2, wxID_ANY, wxBitmap( wxT("resetbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	bSizer9->Add( m_bpButton5, 0, wxALL, 5 );
+	pitchResetBtn = new wxBitmapButton( m_panel2, wxID_ANY, wxBitmap( wxT("resetbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	bSizer9->Add( pitchResetBtn, 0, wxALL, 5 );
 	
 	fgSizer5->Add( bSizer9, 1, wxEXPAND, 5 );
 	
@@ -120,8 +120,8 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	finePitchSlider = new wxSlider( m_panel2, wxID_ANY, 0, -50, 50, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
 	bSizer91->Add( finePitchSlider, 1, wxALL, 5 );
 	
-	m_bpButton51 = new wxBitmapButton( m_panel2, wxID_ANY, wxBitmap( wxT("resetbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	bSizer91->Add( m_bpButton51, 0, wxALL, 5 );
+	finePitchResetBtn = new wxBitmapButton( m_panel2, wxID_ANY, wxBitmap( wxT("resetbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	bSizer91->Add( finePitchResetBtn, 0, wxALL, 5 );
 	
 	fgSizer51->Add( bSizer91, 1, wxEXPAND, 5 );
 	
@@ -159,8 +159,8 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	speedSlider = new wxSlider( m_panel2, wxID_ANY, 100, 50, 200, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL );
 	bSizer92->Add( speedSlider, 1, wxALL, 5 );
 	
-	m_bpButton52 = new wxBitmapButton( m_panel2, wxID_ANY, wxBitmap( wxT("resetbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	bSizer92->Add( m_bpButton52, 0, wxALL, 5 );
+	speedResetBtn = new wxBitmapButton( m_panel2, wxID_ANY, wxBitmap( wxT("resetbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	bSizer92->Add( speedResetBtn, 0, wxALL, 5 );
 	
 	fgSizer52->Add( bSizer92, 1, wxEXPAND, 5 );
 	
@@ -175,6 +175,8 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	bSizer121->Fit( m_panel2 );
 	m_notebook2->AddPage( m_panel2, _("Time && Pitch"), true );
 	m_equalizerpanel = new wxPanel( m_notebook2, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
+	m_equalizerpanel->Hide();
+	
 	wxBoxSizer* bSizer101;
 	bSizer101 = new wxBoxSizer( wxVERTICAL );
 	
@@ -395,55 +397,36 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	
 	prevButton->SetMinSize( wxSize( 40,20 ) );
 	
-	bSizer3->Add( prevButton, 0, wxALL|wxEXPAND, 5 );
+	bSizer3->Add( prevButton, 1, wxALL|wxEXPAND, 5 );
 	
-	rewindButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("rewindbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	rewindButton->SetMinSize( wxSize( 40,20 ) );
+	playpauseButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("playbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	playpauseButton->SetMinSize( wxSize( 40,-1 ) );
 	
-	rewindButton->SetMinSize( wxSize( 40,20 ) );
+	playpauseButton->SetMinSize( wxSize( 40,-1 ) );
 	
-	bSizer3->Add( rewindButton, 0, wxALL|wxEXPAND, 5 );
+	bSizer3->Add( playpauseButton, 1, wxALL|wxEXPAND, 5 );
 	
-	playButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("playbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	playButton->SetMinSize( wxSize( 40,-1 ) );
-	
-	playButton->SetMinSize( wxSize( 40,-1 ) );
-	
-	bSizer3->Add( playButton, 0, wxALL|wxEXPAND, 5 );
-	
-	pauseButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("pausebmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	pauseButton->SetMinSize( wxSize( 40,-1 ) );
-	
-	pauseButton->SetMinSize( wxSize( 40,-1 ) );
-	
-	bSizer3->Add( pauseButton, 0, wxALL|wxEXPAND, 5 );
-	
-	forwardButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("forwardbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
-	forwardButton->SetMinSize( wxSize( 40,20 ) );
-	
-	forwardButton->SetMinSize( wxSize( 40,20 ) );
-	
-	bSizer3->Add( forwardButton, 0, wxALL|wxEXPAND, 5 );
-	
-	nextButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("playbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
+	nextButton = new wxBitmapButton( m_panel4, wxID_ANY, wxBitmap( wxT("nextbmp"), wxBITMAP_TYPE_RESOURCE ), wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW );
 	nextButton->SetMinSize( wxSize( 40,-1 ) );
 	
 	nextButton->SetMinSize( wxSize( 40,-1 ) );
 	
-	bSizer3->Add( nextButton, 0, wxALL|wxEXPAND, 5 );
+	bSizer3->Add( nextButton, 1, wxALL|wxEXPAND, 5 );
 	
 	gbSizer1->Add( bSizer3, wxGBPosition( 2, 0 ), wxGBSpan( 1, 3 ), wxEXPAND, 5 );
 	
 	fgSizer1->Add( gbSizer1, 0, wxEXPAND|wxBOTTOM|wxLEFT, 5 );
 	
 	wxFlexGridSizer* fgSizer8;
-	fgSizer8 = new wxFlexGridSizer( 2, 1, 0, 0 );
+	fgSizer8 = new wxFlexGridSizer( 3, 1, 0, 0 );
 	fgSizer8->AddGrowableCol( 0 );
 	fgSizer8->AddGrowableRow( 1 );
 	fgSizer8->SetFlexibleDirection( wxBOTH );
 	fgSizer8->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
 	LoopOnCheckBox = new wxCheckBox( m_panel4, wxID_ANY, _("Looping"), wxDefaultPosition, wxDefaultSize, 0 );
+	LoopOnCheckBox->SetFont( wxFont( wxNORMAL_FONT->GetPointSize(), 70, 90, 92, false, wxEmptyString ) );
+	
 	fgSizer8->Add( LoopOnCheckBox, 0, wxALL, 5 );
 	
 	wxFlexGridSizer* fgSizer3;
@@ -592,23 +575,31 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 	checkCddbDatabaseMenu = new wxMenuItem( actionsMenu, ID_CHECK_CDDB_DATABASE, wxString( _("Check CDDB Database") ) , wxEmptyString, wxITEM_CHECK );
 	actionsMenu->Append( checkCddbDatabaseMenu );
 	
-	main_menubar->Append( actionsMenu, _("Actions") );
+	main_menubar->Append( actionsMenu, _("Actions") ); 
 	
 	languageMenu = new wxMenu();
-	main_menubar->Append( languageMenu, _("Language") );
+	main_menubar->Append( languageMenu, _("Language") ); 
 	
 	helpMenu = new wxMenu();
 	wxMenuItem* aboutMenu;
 	aboutMenu = new wxMenuItem( helpMenu, ID_ABOUT, wxString( _("About") ) , wxEmptyString, wxITEM_NORMAL );
 	helpMenu->Append( aboutMenu );
 	
-	main_menubar->Append( helpMenu, _("Help") );
+	main_menubar->Append( helpMenu, _("Help") ); 
 	
 	this->SetMenuBar( main_menubar );
 	
 	
 	// Connect Events
+	pitchResetBtn->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::pitchResetClick ), NULL, this );
+	finePitchResetBtn->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::finePitchResetClick ), NULL, this );
+	speedResetBtn->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::speedResetClick ), NULL, this );
 	m_flatbtn->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::FlatBtnClick ), NULL, this );
+	prevButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::prevClick ), NULL, this );
+	playpauseButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::playClick ), NULL, this );
+	nextButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::nextClick ), NULL, this );
+	loopStartNowButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::loopStartNowClick ), NULL, this );
+	loopEndNowButton->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::loopEndNowClick ), NULL, this );
 	this->Connect( openFileMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::OpenFile ) );
 	this->Connect( openDiscMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::OpenDisc ) );
 	this->Connect( saveAsMenu->GetId(), wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::SaveAs ) );
@@ -620,13 +611,22 @@ BpMainFrameBase::BpMainFrameBase( wxWindow* parent, wxWindowID id, const wxStrin
 BpMainFrameBase::~BpMainFrameBase()
 {
 	// Disconnect Events
+	pitchResetBtn->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::pitchResetClick ), NULL, this );
+	finePitchResetBtn->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::finePitchResetClick ), NULL, this );
+	speedResetBtn->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::speedResetClick ), NULL, this );
 	m_flatbtn->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::FlatBtnClick ), NULL, this );
+	prevButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::prevClick ), NULL, this );
+	playpauseButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::playClick ), NULL, this );
+	nextButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::nextClick ), NULL, this );
+	loopStartNowButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::loopStartNowClick ), NULL, this );
+	loopEndNowButton->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( BpMainFrameBase::loopEndNowClick ), NULL, this );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::OpenFile ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::OpenDisc ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::SaveAs ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::SaveLoopPoints ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::CheckCDDB ) );
 	this->Disconnect( wxID_ANY, wxEVT_COMMAND_MENU_SELECTED, wxCommandEventHandler( BpMainFrameBase::AboutMenu ) );
+	
 }
 
 BpAboutDlgBase::BpAboutDlgBase( wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style ) : wxDialog( parent, id, title, pos, size, style )

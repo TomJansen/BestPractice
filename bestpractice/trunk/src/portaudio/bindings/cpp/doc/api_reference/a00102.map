@@ -1,0 +1,20 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,514,136"];
+	Node1 [label="Stream.cxx", height="0.22", width="0.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="227,120", rects="196,112,259,128"];
+	Node2 [label="portaudiocpp/Stream.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00051.html", pos="67,68", rects="0,60,134,76"];
+	Node3 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="281,16", rects="249,8,314,24"];
+	Node4 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="174,68", rects="152,60,197,76"];
+	Node5 [label="portaudiocpp/Exception.hxx", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$a00041.html", pos="440,68", rects="366,60,514,76"];
+	Node6 [label=exception, height="0.22", width="0.78", color=grey75, fillcolor=white, style=filled, pos="440,16", rects="412,8,468,24"];
+	Node7 [label="portaudiocpp/System.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00055.html", pos="281,68", rects="214,60,348,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,92,76 202,112 175,103 131,89 101,79"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,249,24 100,60 134,52 190,38 240,26"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,182,76 219,112 211,104 198,92 188,82"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,406,76 259,112 306,100 361,87 398,78"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,440,24 440,60 440,53 440,42 440,33"];
+	Node5 -> Node3 [color=midnightblue, style=solid, pos="e,306,24 416,60 389,51 346,37 316,27"];
+	Node1 -> Node7 [color=midnightblue, style=solid, pos="e,273,76 235,112 244,104 256,92 266,82"];
+	Node7 -> Node3 [color=midnightblue, style=solid, pos="e,281,24 281,60 281,53 281,42 281,33"];
+}

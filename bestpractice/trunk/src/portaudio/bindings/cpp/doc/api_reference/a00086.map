@@ -1,0 +1,28 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,1196,188"];
+	Node1 [label="DirectionSpecificStreamParameters.hxx", height="0.22", width="2.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="230,172", rects="128,164,332,180"];
+	Node2 [label="DirectionSpecificStreamParameters.cxx", height="0.22", width="2.81", color=black, fillcolor=white, style=filled, URL="$a00038.html", pos="101,120", rects="0,112,202,128"];
+	Node3 [label="PortAudioCpp.hxx", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$a00048.html", pos="268,16", rects="217,8,320,24"];
+	Node4 [label="StreamParameters.hxx", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$a00053.html", pos="568,120", rects="508,112,628,128"];
+	Node5 [label="BlockingStream.cxx", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$a00026.html", pos="350,68", rects="296,60,404,76"];
+	Node6 [label="CFunCallbackStream.cxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00032.html", pos="489,68", rects="422,60,556,76"];
+	Node7 [label="CppFunCallbackStream.cxx", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$a00034.html", pos="647,68", rects="574,60,721,76"];
+	Node8 [label="InterfaceCallbackStream.cxx", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$a00044.html", pos="813,68", rects="738,60,889,76"];
+	Node9 [label="StreamParameters.cxx", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$a00052.html", pos="965,68", rects="906,60,1024,76"];
+	Node10 [label="MemFunCallbackStream.hxx", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$a00047.html", pos="1119,68", rects="1042,60,1197,76"];
+	Node11 [label="MemFunCallbackStream.cxx", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$a00046.html", pos="1119,16", rects="1043,8,1196,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,210,164 202,161 178,151 143,137 121,128"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,232,164 234,155 243,121 261,49 266,24"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,282,164 290,163 354,153 455,138 515,128"];
+	Node4 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,534,112 525,110 483,100 422,85 384,76"];
+	Node4 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,556,112 549,107 534,97 514,84 501,76"];
+	Node4 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,580,112 587,107 602,97 622,84 635,76"];
+	Node4 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,606,112 614,110 660,100 732,85 775,76"];
+	Node4 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,628,112 636,111 753,95 786,92 906,76"];
+	Node4 -> Node10 [dir=back, color=midnightblue, style=solid, pos="s,628,112 636,111 813,91 862,93 1042,76"];
+	Node10 -> Node11 [dir=back, color=midnightblue, style=solid, pos="s,1119,60 1119,51 1119,42 1119,31 1119,24"];
+	Node10 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,1042,60 1034,59 721,35 637,56 320,24"];
+	Node4 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,512,112 502,111 420,98 291,80 287,76 272,62 269,37 268,24"];
+}
