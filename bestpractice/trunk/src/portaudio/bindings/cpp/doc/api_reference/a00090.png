@@ -1,0 +1,33 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,735,188"];
+	Node1 [label="HostApi.cxx", height="0.22", width="0.97", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="281,172", rects="246,164,316,180"];
+	Node2 [label="portaudiocpp/HostApi.hxx", height="0.22", width="1.94", color=black, fillcolor=white, style=filled, URL="$a00043.html", pos="89,120", rects="19,112,159,128"];
+	Node3 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="287,16", rects="255,8,320,24"];
+	Node4 [label="portaudiocpp/System.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00055.html", pos="105,68", rects="38,60,172,76"];
+	Node5 [label="portaudiocpp/Device.hxx", height="0.22", width="1.83", color=black, fillcolor=white, style=filled, URL="$a00037.html", pos="281,120", rects="215,112,348,128"];
+	Node6 [label=iterator, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="462,68", rects="440,60,485,76"];
+	Node7 [label="portaudiocpp/SampleDataFormat.hxx", height="0.22", width="2.69", color=black, fillcolor=white, style=filled, URL="$a00049.html", pos="287,68", rects="190,60,385,76"];
+	Node8 [label="portaudiocpp/SystemDeviceIterator.hxx", height="0.22", width="2.83", color=black, fillcolor=white, style=filled, URL="$a00057.html", pos="467,120", rects="365,112,569,128"];
+	Node9 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="524,68", rects="502,60,547,76"];
+	Node10 [label="portaudiocpp/Exception.hxx", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$a00041.html", pos="661,120", rects="587,112,735,128"];
+	Node11 [label=exception, height="0.22", width="0.78", color=grey75, fillcolor=white, style=filled, pos="661,68", rects="633,60,689,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,119,128 251,164 219,155 165,141 128,131"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,255,24 71,112 47,101 12,79 29,60 61,23 189,33 246,25"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,102,76 92,112 94,105 97,94 100,85"];
+	Node4 -> Node3 [color=midnightblue, style=solid, pos="e,259,24 133,60 164,51 215,37 250,27"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,119,76 267,164 252,155 227,140 206,128 178,111 145,92 125,80"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,281,128 281,164 281,157 281,146 281,137"];
+	Node5 -> Node6 [color=midnightblue, style=solid, pos="e,440,76 313,112 343,105 389,92 431,79"];
+	Node5 -> Node3 [color=midnightblue, style=solid, pos="e,316,24 306,112 337,101 388,84 393,76 397,70 396,65 393,60 385,48 353,35 326,27"];
+	Node5 -> Node7 [color=midnightblue, style=solid, pos="e,286,76 282,112 283,105 284,94 285,85"];
+	Node7 -> Node3 [color=midnightblue, style=solid, pos="e,287,24 287,60 287,53 287,42 287,33"];
+	Node1 -> Node8 [color=midnightblue, style=solid, pos="e,438,128 310,164 342,155 394,141 429,131"];
+	Node8 -> Node6 [color=midnightblue, style=solid, pos="e,463,76 466,112 465,105 465,94 464,85"];
+	Node8 -> Node9 [color=midnightblue, style=solid, pos="e,515,76 476,112 485,104 498,92 508,82"];
+	Node8 -> Node4 [color=midnightblue, style=solid, pos="e,161,76 411,112 347,102 240,87 170,77"];
+	Node1 -> Node10 [color=midnightblue, style=solid, pos="e,591,128 316,164 366,155 497,139 583,129"];
+	Node10 -> Node11 [color=midnightblue, style=solid, pos="e,661,76 661,112 661,105 661,94 661,85"];
+	Node10 -> Node3 [color=midnightblue, style=solid, pos="e,320,24 650,112 632,99 592,72 555,60 458,26 425,43 329,26"];
+}

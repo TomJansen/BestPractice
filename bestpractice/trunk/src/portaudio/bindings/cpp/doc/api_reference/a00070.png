@@ -1,0 +1,8 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,118,84"];
+	Node1 [label="CallbackInterface.hxx", height="0.22", width="1.64", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="59,68", rects="0,60,118,76"];
+	Node2 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="59,16", rects="27,8,92,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,59,24 59,60 59,53 59,42 59,33"];
+}

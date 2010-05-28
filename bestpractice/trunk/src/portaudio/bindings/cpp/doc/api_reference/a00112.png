@@ -1,0 +1,14 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,258,136"];
+	Node1 [label="SystemDeviceIterator.hxx", height="0.22", width="1.86", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="84,120", rects="17,112,152,128"];
+	Node2 [label=iterator, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="22,68", rects="0,60,45,76"];
+	Node3 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="84,68", rects="62,60,107,76"];
+	Node4 [label="portaudiocpp/System.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00055.html", pos="191,68", rects="124,60,258,76"];
+	Node5 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="191,16", rects="159,8,224,24"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,32,76 74,112 65,104 50,92 39,82"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,84,76 84,112 84,105 84,94 84,85"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,174,76 101,112 119,103 146,90 166,80"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,191,24 191,60 191,53 191,42 191,33"];
+}

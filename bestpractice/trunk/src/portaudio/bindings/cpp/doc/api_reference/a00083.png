@@ -1,0 +1,20 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,850,84"];
+	Node1 [label="Device.hxx", height="0.22", width="0.89", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="477,68", rects="445,60,509,76"];
+	Node2 [label="AsioDeviceAdapter.cxx", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$a00023.html", pos="62,16", rects="0,8,125,24"];
+	Node3 [label="Device.cxx", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$a00036.html", pos="173,16", rects="142,8,204,24"];
+	Node4 [label="DirectionSpecificStreamParameters.cxx", height="0.22", width="2.81", color=black, fillcolor=white, style=filled, URL="$a00038.html", pos="323,16", rects="222,8,424,24"];
+	Node5 [label="HostApi.cxx", height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$a00042.html", pos="477,16", rects="442,8,512,24"];
+	Node6 [label="StreamParameters.cxx", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$a00052.html", pos="589,16", rects="530,8,648,24"];
+	Node7 [label="System.cxx", height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$a00054.html", pos="698,16", rects="666,8,730,24"];
+	Node8 [label="PortAudioCpp.hxx", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$a00048.html", pos="799,16", rects="748,8,851,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,445,60 436,58 303,34 265,41 125,24"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,445,60 435,58 337,38 308,44 204,24"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,453,60 444,57 415,47 373,33 347,24"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,477,60 477,51 477,42 477,31 477,24"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,495,60 503,56 524,46 553,33 572,24"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,509,60 519,58 580,43 599,39 666,24"];
+	Node1 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,509,60 519,58 616,38 644,39 748,24"];
+}

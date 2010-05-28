@@ -1,0 +1,16 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,446,136"];
+	Node1 [label="DirectionSpecificStreamParameters.hxx", height="0.22", width="2.83", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="119,120", rects="17,112,221,128"];
+	Node2 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="22,68", rects="0,60,45,76"];
+	Node3 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="167,16", rects="135,8,200,24"];
+	Node4 [label="portaudiocpp/System.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00055.html", pos="167,68", rects="100,60,234,76"];
+	Node5 [label="portaudiocpp/SampleDataFormat.hxx", height="0.22", width="2.69", color=black, fillcolor=white, style=filled, URL="$a00049.html", pos="349,68", rects="252,60,447,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,37,76 104,112 88,103 63,90 45,80"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,140,24 110,112 99,100 81,78 91,60 100,45 116,35 131,28"];
+	Node1 -> Node4 [color=midnightblue, style=solid, pos="e,159,76 127,112 134,104 144,92 153,83"];
+	Node4 -> Node3 [color=midnightblue, style=solid, pos="e,167,24 167,60 167,53 167,42 167,33"];
+	Node1 -> Node5 [color=midnightblue, style=solid, pos="e,313,76 154,112 194,103 261,88 304,78"];
+	Node5 -> Node3 [color=midnightblue, style=solid, pos="e,195,24 321,60 290,51 240,37 205,27"];
+}

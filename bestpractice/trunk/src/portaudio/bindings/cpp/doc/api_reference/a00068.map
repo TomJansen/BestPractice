@@ -1,0 +1,10 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,228,84"];
+	Node1 [label="BlockingStream.hxx", height="0.22", width="1.50", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="115,68", rects="61,60,170,76"];
+	Node2 [label="BlockingStream.cxx", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$a00026.html", pos="54,16", rects="0,8,108,24"];
+	Node3 [label="PortAudioCpp.hxx", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$a00048.html", pos="177,16", rects="126,8,229,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,105,60 98,54 87,44 73,32 64,24"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,125,60 132,54 143,44 158,32 167,24"];
+}

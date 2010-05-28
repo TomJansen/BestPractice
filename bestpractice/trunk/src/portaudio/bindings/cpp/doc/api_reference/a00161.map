@@ -1,0 +1,13 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,182,544"];
+	Node1 [label="{portaudio::InterfaceCallbackStream\n||+ InterfaceCallbackStream()\l+ InterfaceCallbackStream()\l+ ~InterfaceCallbackStream()\l+\
+ open()\l- InterfaceCallbackStream()\l- operator=()\l}", height="1.50", width="2.53", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,62", rects="0,100,182,116 0,84,182,100 0,8,182,84"];
+	Node2 [label="{portaudio::CallbackStream\n||+ cpuLoad()\l# CallbackStream()\l# ~CallbackStream()\l- CallbackStream()\l- operator=()\l}", height="1.33", width="1.92", color=black, fillcolor=white, style=filled, URL="$a00005.html", tooltip="Base class for all Streams which use a callback-based mechanism.", pos="91,200", rects="22,232,160,248 22,216,160,232 22,152,160,216"];
+	Node3 [label="{portaudio::Stream\n|# stream_\l|+ ~Stream()\l+ close()\l+ isOpen()\l+ setStreamFinishedCallback()\l+ start()\l+ stop()\l+ abort\
+()\l+ isStopped()\l+ isActive()\l+ inputLatency()\l+ outputLatency()\l+ sampleRate()\l+ time()\l+ paStream()\l+ paStream()\l# St\
+ream()\l- Stream()\l- operator=()\l}", height="3.50", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00020.html", tooltip="A Stream represents an active or inactive input and/or output data stream in the...", pos="91,410", rects="12,520,171,536 12,504,171,520 12,284,171,504"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,91,152 91,141 91,133 91,124 91,116"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,91,284 91,274 91,264 91,256 91,248"];
+}

@@ -1,0 +1,11 @@
+digraph G {
+	graph [rankdir=LR];
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,304,50"];
+	Node1 [label="portaudio::Exception", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$a00011.html", tooltip="Base class for all exceptions PortAudioCpp can throw.", pos="63,25", rects="9,17,118,33"];
+	Node2 [label="portaudio::PaCppException", height="0.22", width="1.97", color=black, fillcolor=white, style=filled, URL="$a00018.html", tooltip="Exceptions specific to PortAudioCpp (ie. exceptions which do not have an equivalent...", pos="225,42", rects="154,34,296,50"];
+	Node3 [label="portaudio::PaException", height="0.22", width="1.67", color=black, fillcolor=white, style=filled, URL="$a00019.html", tooltip="Wrapper for PortAudio error codes to C++ exceptions.", pos="225,8", rects="165,0,286,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,118,31 127,32 136,33 145,34 154,35"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,118,19 127,18 139,17 152,16 164,14"];
+}

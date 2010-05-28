@@ -1,0 +1,16 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,494,84"];
+	Node1 [label="HostApi.hxx", height="0.22", width="1.00", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="257,68", rects="221,60,293,76"];
+	Node2 [label="AsioDeviceAdapter.cxx", height="0.22", width="1.72", color=black, fillcolor=white, style=filled, URL="$a00023.html", pos="62,16", rects="0,8,125,24"];
+	Node3 [label="Device.cxx", height="0.22", width="0.86", color=black, fillcolor=white, style=filled, URL="$a00036.html", pos="173,16", rects="142,8,204,24"];
+	Node4 [label="HostApi.cxx", height="0.22", width="0.97", color=black, fillcolor=white, style=filled, URL="$a00042.html", pos="257,16", rects="222,8,292,24"];
+	Node5 [label="System.cxx", height="0.22", width="0.89", color=black, fillcolor=white, style=filled, URL="$a00054.html", pos="342,16", rects="310,8,374,24"];
+	Node6 [label="PortAudioCpp.hxx", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$a00048.html", pos="443,16", rects="392,8,495,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,227,60 218,57 180,47 126,33 92,24"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,244,60 236,55 221,45 200,33 186,24"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,257,60 257,51 257,42 257,31 257,24"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,270,60 278,55 294,45 315,33 329,24"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,286,60 296,57 331,47 382,33 414,24"];
+}

@@ -1,0 +1,9 @@
+digraph G {
+	graph [rankdir=LR];
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,604,16"];
+	Node1 [label="portaudio::CallbackInterface", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$a00004.html", tooltip="Interface for an object that&#39;s callable as a PortAudioCpp callback object (ie...", pos="82,8", rects="9,0,156,16"];
+	Node2 [label="portaudio::MemFunCallbackStream\< T \>::MemFunToCallbackInterfaceAdapter", height="0.22", width="5.58", color=black, fillcolor=white, style=filled, URL="$a00017.html", tooltip="Inner class which adapts a member function callback to a CallbackInterface compliant...", pos="394,8", rects="193,0,596,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,156,8 166,8 174,8 183,8 192,8"];
+}

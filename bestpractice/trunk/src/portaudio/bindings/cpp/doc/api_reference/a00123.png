@@ -1,0 +1,7 @@
+digraph G {
+	graph [rankdir=LR];
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,286,16"];
+	Node1 [label="portaudio::FunCallbackStream::CppToCCallbackData", height="0.22", width="3.72", color=black, fillcolor=white, style=filled, URL="$a00007.html", tooltip="Simple structure containing a function pointer to the C++ callback function and a...", pos="143,8", rects="9,0,278,16"];
+}

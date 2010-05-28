@@ -1,0 +1,13 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,212,556"];
+	Node1 [label="{portaudio::MemFunCallbackStream\< T \>\n|- adapter_\l|+ MemFunCallbackStream()\l+ MemFunCallbackStream()\l+ ~MemFunCallbackStre\
+am()\l+ open()\l- MemFunCallbackStream()\l- operator=()\l- open()\l}", height="1.67", width="2.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="106,68", rects="0,112,212,128 0,96,212,112 0,8,212,96"];
+	Node2 [label="{portaudio::CallbackStream\n||+ cpuLoad()\l# CallbackStream()\l# ~CallbackStream()\l- CallbackStream()\l- operator=()\l}", height="1.33", width="1.92", color=black, fillcolor=white, style=filled, URL="$a00005.html", tooltip="Base class for all Streams which use a callback-based mechanism.", pos="106,212", rects="37,244,175,260 37,228,175,244 37,164,175,228"];
+	Node3 [label="{portaudio::Stream\n|# stream_\l|+ ~Stream()\l+ close()\l+ isOpen()\l+ setStreamFinishedCallback()\l+ start()\l+ stop()\l+ abort\
+()\l+ isStopped()\l+ isActive()\l+ inputLatency()\l+ outputLatency()\l+ sampleRate()\l+ time()\l+ paStream()\l+ paStream()\l# St\
+ream()\l- Stream()\l- operator=()\l}", height="3.50", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00020.html", tooltip="A Stream represents an active or inactive input and/or output data stream in the...", pos="106,422", rects="27,532,186,548 27,516,186,532 27,296,186,516"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,106,164 106,153 106,145 106,136 106,128"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,106,296 106,286 106,276 106,268 106,260"];
+}

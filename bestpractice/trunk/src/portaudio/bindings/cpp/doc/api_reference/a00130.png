@@ -1,0 +1,14 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,182,596"];
+	Node1 [label="{portaudio::AsioDeviceAdapter\n|- device_\l- minBufferSize_\l- maxBufferSize_\l- preferredBufferSize_\l- granularity_\l|+ AsioDe\
+viceAdapter()\l+ device()\l+ minBufferSize()\l+ maxBufferSize()\l+ preferredBufferSize()\l+ granularity()\l+ showControlPanel()\\
+l+ inputChannelName()\l+ outputChannelName()\l}", height="2.67", width="2.17", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="91,104", rects="13,184,169,200 13,120,169,184 13,8,169,120"];
+	Node2 [label="{portaudio::Device\n|- index_\l- info_\l|+ index()\l+ name()\l+ maxInputChannels()\l+ maxOutputChannels()\l+ defaultLowInputLate\
+ncy()\l+ defaultHighInputLatency()\l+ defaultLowOutputLatency()\l+ defaultHighOutputLatency()\l+ defaultSampleRate()\l+ isInputO\
+nlyDevice()\l+ isOutputOnlyDevice()\l+ isFullDuplexDevice()\l+ isSystemDefaultInputDevice()\l+ isSystemDefaultOutputDevice()\l+ \
+isHostApiDefaultInputDevice()\l+ isHostApiDefaultOutputDevice()\l+ operator==()\l+ operator!=()\l+ hostApi()\l+ hostApi()\l- Dev\
+ice()\l- ~Device()\l- Device()\l- operator=()\l}", height="4.67", width="2.53", color=black, fillcolor=white, style=filled, URL="$a00008.html", tooltip="Class which represents a PortAudio device in the System.", pos="91,420", rects="0,572,183,588 0,544,183,572 0,252,183,544"];
+	Node2 -> Node1 [dir=back, color=darkorchid3, style=dashed, label=device_, arrowtail=open, pos="s,91,252 91,252 91,234 91,217 91,200", lp="115,226"];
+}

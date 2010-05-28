@@ -1,0 +1,23 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,979,136"];
+	Node1 [label="StreamParameters.hxx", height="0.22", width="1.67", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="517,120", rects="457,112,577,128"];
+	Node2 [label="BlockingStream.cxx", height="0.22", width="1.50", color=black, fillcolor=white, style=filled, URL="$a00026.html", pos="54,68", rects="0,60,108,76"];
+	Node3 [label="CFunCallbackStream.cxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00032.html", pos="193,68", rects="126,60,260,76"];
+	Node4 [label="CppFunCallbackStream.cxx", height="0.22", width="2.03", color=black, fillcolor=white, style=filled, URL="$a00034.html", pos="351,68", rects="278,60,425,76"];
+	Node5 [label="InterfaceCallbackStream.cxx", height="0.22", width="2.08", color=black, fillcolor=white, style=filled, URL="$a00044.html", pos="517,68", rects="442,60,593,76"];
+	Node6 [label="StreamParameters.cxx", height="0.22", width="1.64", color=black, fillcolor=white, style=filled, URL="$a00052.html", pos="669,68", rects="610,60,728,76"];
+	Node7 [label="MemFunCallbackStream.hxx", height="0.22", width="2.14", color=black, fillcolor=white, style=filled, URL="$a00047.html", pos="823,68", rects="746,60,901,76"];
+	Node8 [label="MemFunCallbackStream.cxx", height="0.22", width="2.11", color=black, fillcolor=white, style=filled, URL="$a00046.html", pos="783,16", rects="707,8,860,24"];
+	Node9 [label="PortAudioCpp.hxx", height="0.22", width="1.42", color=black, fillcolor=white, style=filled, URL="$a00048.html", pos="928,16", rects="877,8,980,24"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,457,112 449,111 300,93 259,95 108,76"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,467,112 459,111 397,101 301,86 243,76"];
+	Node1 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,491,112 482,109 451,99 405,85 377,76"];
+	Node1 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,517,112 517,103 517,94 517,83 517,76"];
+	Node1 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,540,112 549,109 578,99 620,85 645,76"];
+	Node1 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,564,112 573,110 631,100 721,85 775,76"];
+	Node7 -> Node8 [dir=back, color=midnightblue, style=solid, pos="s,817,60 812,53 805,43 795,32 789,24"];
+	Node7 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,839,60 847,56 867,46 894,33 912,24"];
+	Node1 -> Node9 [dir=back, color=midnightblue, style=solid, pos="s,577,112 586,111 666,104 853,121 909,76 924,63 927,37 928,24"];
+}

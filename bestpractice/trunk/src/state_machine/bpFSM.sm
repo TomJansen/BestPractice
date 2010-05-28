@@ -1,0 +1,183 @@
+%{ 
+/*
+** Copyright (C) 2010 Robert Moerland
+**
+** This program is free software; you can redistribute it and/or modify
+** it under the terms of the GNU General Public License as published by
+** the Free Software Foundation version 2.
+**
+** This program is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU General Public License for more details.
+**
+** You should have received a copy of the GNU General Public License
+** along with this program; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+*/
+
+%} 
+
+%class BpMainFrame
+%package bestpractice
+%fsmclass bpFSM 
+%header "../gui/bpmainframe.h"
+%access package 
+%start File::Stopped
+%map File 
+%% 
+
+// Guards:
+//
+// bool InitializeAudioStreamFromFile( ... ) opens a file, checks it is a valid audio file
+// and acquires a portaudio stream object. Return true if successful
+// 
+// bool NextAudioFileAvailable() returns true if there is a next audio file (in a list/folder)
+// bool PreviousAudioFileAvailable() returns true if there is a previous audio file (in a list/folder)
+//
+// Actions:
+// PauseStream() pauses the stream
+// ContinueStream() continues Playing the stream (possibly from beginning)
+// UninitializeAudioStream() stops Playing the stream and releases the portaudio stream object and audio source. 
+// InitializeAudioStreamFromFile( filename: wxString ) initializes a portaudio stream and audio source object 
+//
+// States:
+// Paused: Playing is Paused
+// Playing: currently Playing 
+// Stopped: nothing being played
+//
+// Events:
+// PlayPause: toggles Playing of audio
+// Stop: stops Playing and release resources
+// NewFile: stop Playing current audio stream and commence Playing new file
+// Next: stop Playing current audio stream and commence Playing next file (in a list)
+// Previous: stop Playing current audio stream and commence Playing previous file (in a list)
+
+
+Default
+{
+	// try to start a new song, but if unsuccessful, go into Stopped state 
+	// skip this event if there is no next file
+	Next() 
+		[ !ctxt.NextAudioFileAvailable() ] 		 		
+			nil		
+				{ }
+	
+	Next() 
+		[ ctxt.NextAudioFileAvailable() && ctxt.InitializeAudioStreamFromFile( ctxt.GetNextAudioFileName() ) ] 		 		
+			nil		
+				{ }
+
+	
+				
+	// try to start a new song, but if unsuccessful, go into Stopped state			
+	// skip this event if there is no next file
+	Previous() 
+		[ !ctxt.PreviousAudioFileAvailable() ]
+			nil
+				{  }
+					
+	Previous()
+		[ ctxt.PreviousAudioFileAvailable() && ctxt.InitializeAudioStreamFromFile( ctxt.GetPreviousAudioFileName() ) ] 		 		
+			nil		
+				{ }
+
+	
+	
+    // try to start a new song, but if unsuccessful, go into Stopped state	
+	NewFile(filename: wxString )
+		[ ctxt.InitializeAudioStreamFromFile( filename ) ] 		 		
+			nil		
+				{ }
+	
+	// Fallback if opening a new stream fails -> stopped state
+	NewFile(filename: wxString )
+	
+			Stopped
+				{ }
+				
+				
+	Stop
+			Stopped
+			{ }
+						
+}
+				
+Paused 
+Entry{ PauseStream(); }
+{			
+	PlayPause
+			Playing			
+				{ }
+	
+}
+
+Playing 
+Entry{ ContinueStream(); }
+{
+	PlayPause
+			Paused			
+				{ }
+				
+	// try to start a new song, but if unsuccessful, go into Stopped state 
+	// skip this event if there is no next file
+	Next() 
+		[ !ctxt.NextAudioFileAvailable() ] 		 		
+			nil		
+				{ }
+	
+	Next() 
+		[ ctxt.NextAudioFileAvailable() && ctxt.InitializeAudioStreamFromFile( ctxt.GetNextAudioFileName() ) ] 		 		
+			nil		
+				{ ContinueStream(); } //Explicitly start playing the stream
+
+	
+				
+	// try to start a new song, but if unsuccessful, go into Stopped state			
+	// skip this event if there is no next file
+	Previous() 
+		[ !ctxt.PreviousAudioFileAvailable() ]
+			nil
+				{  }
+					
+	Previous()
+		[ ctxt.PreviousAudioFileAvailable() && ctxt.InitializeAudioStreamFromFile( ctxt.GetPreviousAudioFileName() ) ] 		 		
+			Playing		
+				{ } // Execute entry action -> play stream
+	
+}
+
+Stopped
+Entry{ UninitializeAudioStream(); }
+{
+	PlayPause
+			nil			
+				{ }
+	
+	Stop
+			nil
+				{ }
+	
+	// do nothing when stopped
+	Next() 
+		nil
+				{ }
+				
+				
+	// do nothing when stopped
+	Previous() 
+		nil
+				{ }
+	
+    // try to start a new song, but if unsuccessful, go into Stopped state via Default transition
+	NewFile(filename: wxString )
+		[ ctxt.InitializeAudioStreamFromFile( filename ) ] 		 		
+			Playing		
+				{ }
+	
+	
+}
+
+
+
+%%

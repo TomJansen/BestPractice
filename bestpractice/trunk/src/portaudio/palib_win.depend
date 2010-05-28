@@ -1,0 +1,151 @@
+# depslib dependency file v1.0
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_allocation.c
+	"pa_allocation.h"
+	"pa_util.h"
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_allocation.h
+
+1181923870 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_util.h
+	"portaudio.h"
+
+1186849748 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\include\portaudio.h
+
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_converters.c
+	"pa_converters.h"
+	"pa_dither.h"
+	"pa_endianness.h"
+	"pa_types.h"
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_converters.h
+	"portaudio.h"
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_dither.h
+
+1181467560 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_endianness.h
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_types.h
+
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_cpuload.c
+	"pa_cpuload.h"
+	<assert.h>
+	"pa_util.h"
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_cpuload.h
+
+1191953816 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_debugprint.c
+	<stdio.h>
+	<stdarg.h>
+	"pa_debugprint.h"
+
+1181923870 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_debugprint.h
+
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_dither.c
+	"pa_dither.h"
+	"pa_types.h"
+
+1181923870 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_front.c
+	<stdio.h>
+	<memory.h>
+	<string.h>
+	<assert.h>
+	"portaudio.h"
+	"pa_util.h"
+	"pa_endianness.h"
+	"pa_types.h"
+	"pa_hostapi.h"
+	"pa_stream.h"
+	"pa_trace.h"
+	"pa_debugprint.h"
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_hostapi.h
+	"portaudio.h"
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_stream.h
+	"portaudio.h"
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_trace.h
+
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_process.c
+	<assert.h>
+	<string.h>
+	"pa_process.h"
+	"pa_util.h"
+
+1156580872 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_process.h
+	"portaudio.h"
+	"pa_converters.h"
+	"pa_dither.h"
+
+1184677506 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_ringbuffer.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"pa_ringbuffer.h"
+	<string.h>
+	<libkern/OSAtomic.h>
+
+1164766276 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_ringbuffer.h
+
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_skeleton.c
+	<string.h>
+	"pa_util.h"
+	"pa_allocation.h"
+	"pa_hostapi.h"
+	"pa_stream.h"
+	"pa_cpuload.h"
+	"pa_process.h"
+
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_stream.c
+	"pa_stream.h"
+
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\common\pa_trace.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pa_trace.h"
+
+1190842462 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\hostapi\wmme\pa_win_wmme.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<windows.h>
+	<mmsystem.h>
+	<process.h>
+	<assert.h>
+	<malloc.h>
+	<memory.h>
+	"portaudio.h"
+	"pa_trace.h"
+	"pa_util.h"
+	"pa_allocation.h"
+	"pa_hostapi.h"
+	"pa_stream.h"
+	"pa_cpuload.h"
+	"pa_process.h"
+	"pa_debugprint.h"
+	"pa_win_wmme.h"
+	"pa_win_waveformat.h"
+	"pa_win_wdmks_utils.h"
+
+1186849748 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\include\pa_win_wmme.h
+	"portaudio.h"
+	"pa_win_waveformat.h"
+
+1189778074 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\include\pa_win_waveformat.h
+
+1190842462 c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\os\win\pa_win_wdmks_utils.h
+
+1156580872 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\os\win\pa_win_hostapis.c
+	"pa_hostapi.h"
+
+1178284030 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\os\win\pa_win_util.c
+	<windows.h>
+	<mmsystem.h>
+	"pa_util.h"
+
+1189778074 source:c:\users\robert\documents\projects\bp\bestpractice-sf\src\portaudio\src\os\win\pa_win_waveformat.c
+	<windows.h>
+	<mmsystem.h>
+	"portaudio.h"
+	"pa_win_waveformat.h"
+

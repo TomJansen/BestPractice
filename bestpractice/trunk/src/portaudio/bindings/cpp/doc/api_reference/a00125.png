@@ -1,0 +1,19 @@
+digraph G {
+	graph [rankdir=LR];
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,534,118"];
+	Node1 [label="portaudio::Stream", height="0.22", width="1.31", color=black, fillcolor=white, style=filled, URL="$a00020.html", tooltip="A Stream represents an active or inactive input and/or output data stream in the...", pos="55,76", rects="8,68,102,84"];
+	Node2 [label="portaudio::BlockingStream", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$a00003.html", tooltip="Stream class for blocking read/write-style input and output.", pos="208,93", rects="139,85,278,101"];
+	Node3 [label="portaudio::CallbackStream", height="0.22", width="1.92", color=black, fillcolor=white, style=filled, URL="$a00005.html", tooltip="Base class for all Streams which use a callback-based mechanism.", pos="208,59", rects="139,51,277,67"];
+	Node4 [label="portaudio::CFunCallbackStream", height="0.22", width="2.28", color=black, fillcolor=white, style=filled, URL="$a00006.html", tooltip="Callback stream using a free function with C linkage. It&#39;s important that the...", pos="420,110", rects="338,102,503,118"];
+	Node5 [label="portaudio::FunCallbackStream", height="0.22", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00012.html", tooltip="Callback stream using a C++ function (either a free function or a static function)...", pos="420,76", rects="341,68,499,84"];
+	Node6 [label="portaudio::InterfaceCallbackStream", height="0.22", width="2.53", color=black, fillcolor=white, style=filled, URL="$a00015.html", tooltip="Callback stream using an instance of an object that&#39;s derived from the CallbackInterface...", pos="420,42", rects="329,34,511,50"];
+	Node7 [label="portaudio::MemFunCallbackStream\< T \>", height="0.22", width="2.94", color=black, fillcolor=white, style=filled, URL="$a00016.html", tooltip="Callback stream using a class&#39;s member function as a callback. Template argument...", pos="420,8", rects="314,0,526,16"];
+	Node1 -> Node2 [dir=back, color=midnightblue, style=solid, pos="s,102,81 111,82 120,83 129,84 138,85"];
+	Node1 -> Node3 [dir=back, color=midnightblue, style=solid, pos="s,102,71 111,70 120,69 129,68 139,67"];
+	Node3 -> Node4 [dir=back, color=midnightblue, style=solid, pos="s,277,67 286,71 298,81 297,93 314,102 321,105 329,108 337,109"];
+	Node3 -> Node5 [dir=back, color=midnightblue, style=solid, pos="s,277,65 287,66 296,67 305,67 314,68 323,69 332,69 341,70"];
+	Node3 -> Node6 [dir=back, color=midnightblue, style=solid, pos="s,277,53 286,52 295,52 305,51 314,50 319,50 324,49 329,49"];
+	Node3 -> Node7 [dir=back, color=midnightblue, style=solid, pos="s,277,51 284,47 298,37 296,24 314,16"];
+}

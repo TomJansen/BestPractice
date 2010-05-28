@@ -1,0 +1,14 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,222,188"];
+	Node1 [label="InterfaceCallbackStream.hxx", height="0.22", width="2.11", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="76,172", rects="0,164,152,180"];
+	Node2 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="56,16", rects="24,8,89,24"];
+	Node3 [label="portaudiocpp/CallbackStream.hxx", height="0.22", width="2.44", color=black, fillcolor=white, style=filled, URL="$a00031.html", pos="134,120", rects="46,112,223,128"];
+	Node4 [label="portaudiocpp/Stream.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00051.html", pos="151,68", rects="84,60,218,76"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,52,24 66,164 56,156 43,143 37,128 25,94 40,52 49,31"];
+	Node1 -> Node3 [color=midnightblue, style=solid, pos="e,125,128 85,164 94,156 108,144 118,134"];
+	Node3 -> Node2 [color=midnightblue, style=solid, pos="e,57,24 118,112 105,104 86,92 75,76 65,63 60,44 58,31"];
+	Node3 -> Node4 [color=midnightblue, style=solid, pos="e,148,76 137,112 139,105 142,94 145,85"];
+	Node4 -> Node2 [color=midnightblue, style=solid, pos="e,71,24 136,60 120,51 96,38 79,28"];
+}

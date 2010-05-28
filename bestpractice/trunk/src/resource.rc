@@ -4,8 +4,7 @@ nextbmp BITMAP "resource/next.bmp"
 pausebmp BITMAP "resource/pause.bmp"
 playbmp BITMAP "resource/play.bmp"
 resetbmp BITMAP "resource/reset.bmp"
-forwardbmp BITMAP "resource/forward.bmp"
-rewindbmp BITMAP "resource/rewind.bmp"
+
 
 #ifdef __GNUC__ //VC++ adds its own manifest
 1 24 "bp.manifest"

@@ -1,0 +1,35 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,828,240"];
+	Node1 [label="CppFunCallbackStream.cxx", height="0.22", width="2.03", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="376,224", rects="303,216,450,232"];
+	Node2 [label="portaudiocpp/CppFunCallbackStream.hxx", height="0.22", width="3.00", color=black, fillcolor=white, style=filled, URL="$a00035.html", pos="126,172", rects="18,164,235,180"];
+	Node3 [label="portaudio.h", height="0.22", width="0.89", color=grey75, fillcolor=white, style=filled, pos="261,16", rects="229,8,294,24"];
+	Node4 [label="portaudiocpp/CallbackStream.hxx", height="0.22", width="2.44", color=black, fillcolor=white, style=filled, URL="$a00031.html", pos="126,120", rects="38,112,215,128"];
+	Node5 [label="portaudiocpp/Stream.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00051.html", pos="147,68", rects="80,60,214,76"];
+	Node6 [label="portaudiocpp/StreamParameters.hxx", height="0.22", width="2.61", color=black, fillcolor=white, style=filled, URL="$a00053.html", pos="376,172", rects="282,164,471,180"];
+	Node7 [label="portaudiocpp/DirectionSpecificStreamParameters.hxx", height="0.22", width="3.78", color=black, fillcolor=white, style=filled, URL="$a00039.html", pos="406,120", rects="270,112,543,128"];
+	Node8 [label=cstddef, height="0.22", width="0.61", color=grey75, fillcolor=white, style=filled, pos="330,68", rects="308,60,353,76"];
+	Node9 [label="portaudiocpp/System.hxx", height="0.22", width="1.86", color=black, fillcolor=white, style=filled, URL="$a00055.html", pos="437,68", rects="370,60,504,76"];
+	Node10 [label="portaudiocpp/SampleDataFormat.hxx", height="0.22", width="2.69", color=black, fillcolor=white, style=filled, URL="$a00049.html", pos="619,68", rects="522,60,717,76"];
+	Node11 [label="portaudiocpp/Exception.hxx", height="0.22", width="2.06", color=black, fillcolor=white, style=filled, URL="$a00041.html", pos="744,172", rects="670,164,818,180"];
+	Node12 [label=exception, height="0.22", width="0.78", color=grey75, fillcolor=white, style=filled, pos="800,120", rects="772,112,828,128"];
+	Node1 -> Node2 [color=midnightblue, style=solid, pos="e,165,180 337,216 293,207 221,192 174,182"];
+	Node2 -> Node3 [color=midnightblue, style=solid, pos="e,229,24 85,164 55,156 21,140 29,112 44,64 57,45 103,28 116,24 195,25 222,24"];
+	Node2 -> Node4 [color=midnightblue, style=solid, pos="e,126,128 126,164 126,157 126,146 126,137"];
+	Node4 -> Node3 [color=midnightblue, style=solid, pos="e,229,24 109,112 88,101 56,79 71,60 114,7 155,37 219,26"];
+	Node4 -> Node5 [color=midnightblue, style=solid, pos="e,144,76 129,112 132,105 137,94 140,85"];
+	Node5 -> Node3 [color=midnightblue, style=solid, pos="e,243,24 165,60 184,51 214,38 235,28"];
+	Node1 -> Node6 [color=midnightblue, style=solid, pos="e,376,180 376,216 376,209 376,198 376,189"];
+	Node6 -> Node3 [color=midnightblue, style=solid, pos="e,258,24 344,164 314,156 271,142 261,128 241,98 250,54 256,31"];
+	Node6 -> Node7 [color=midnightblue, style=solid, pos="e,401,128 381,164 385,156 391,145 397,136"];
+	Node7 -> Node8 [color=midnightblue, style=solid, pos="e,342,76 394,112 382,104 363,91 349,81"];
+	Node7 -> Node3 [color=midnightblue, style=solid, pos="e,264,24 372,112 349,105 320,94 299,76 285,63 274,44 267,31"];
+	Node7 -> Node9 [color=midnightblue, style=solid, pos="e,432,76 411,112 416,104 422,93 427,84"];
+	Node9 -> Node3 [color=midnightblue, style=solid, pos="e,289,24 410,60 380,51 331,37 297,27"];
+	Node7 -> Node10 [color=midnightblue, style=solid, pos="e,586,76 439,112 476,103 537,88 578,78"];
+	Node10 -> Node3 [color=midnightblue, style=solid, pos="e,294,24 546,60 482,52 386,41 302,25"];
+	Node1 -> Node11 [color=midnightblue, style=solid, pos="e,687,180 433,216 499,206 608,191 679,181"];
+	Node11 -> Node12 [color=midnightblue, style=solid, pos="e,791,128 753,164 762,156 775,144 785,134"];
+	Node11 -> Node3 [color=midnightblue, style=solid, pos="e,294,24 746,164 749,143 755,87 725,60 662,3 427,35 342,28 324,26 318,27 303,25"];
+}

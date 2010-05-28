@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version Aug 25 2009)
+// C++ code generated with wxFormBuilder (version Feb 17 2010)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO "NOT" EDIT THIS FILE!
@@ -64,19 +64,19 @@ namespace bestpractice
 			wxPanel* m_panel2;
 			wxStaticText* m_staticText16;
 			wxSlider* pitchSlider;
-			wxBitmapButton* m_bpButton5;
+			wxBitmapButton* pitchResetBtn;
 			wxStaticText* semitonesNumber;
 			wxStaticText* semitonesText;
 			wxStaticLine* m_staticline2;
 			wxStaticText* m_staticText161;
 			wxSlider* finePitchSlider;
-			wxBitmapButton* m_bpButton51;
+			wxBitmapButton* finePitchResetBtn;
 			wxStaticText* centsNumber;
 			wxStaticText* centsText;
 			wxStaticLine* m_staticline3;
 			wxStaticText* m_staticText162;
 			wxSlider* speedSlider;
-			wxBitmapButton* m_bpButton52;
+			wxBitmapButton* speedResetBtn;
 			wxStaticText* m_staticText192;
 			wxPanel* m_equalizerpanel;
 			wxStaticText* m_staticText221;
@@ -113,10 +113,7 @@ namespace bestpractice
 			wxSlider* volumeSlider;
 			wxStaticText* volumeText;
 			wxBitmapButton* prevButton;
-			wxBitmapButton* rewindButton;
-			wxBitmapButton* playButton;
-			wxBitmapButton* pauseButton;
-			wxBitmapButton* forwardButton;
+			wxBitmapButton* playpauseButton;
 			wxBitmapButton* nextButton;
 			wxCheckBox* LoopOnCheckBox;
 			
@@ -153,7 +150,15 @@ namespace bestpractice
 			wxMenu* helpMenu;
 			
 			// Virtual event handlers, overide them in your derived class
+			virtual void pitchResetClick( wxCommandEvent& event ) { event.Skip(); }
+			virtual void finePitchResetClick( wxCommandEvent& event ) { event.Skip(); }
+			virtual void speedResetClick( wxCommandEvent& event ) { event.Skip(); }
 			virtual void FlatBtnClick( wxCommandEvent& event ) { event.Skip(); }
+			virtual void prevClick( wxCommandEvent& event ) { event.Skip(); }
+			virtual void playClick( wxCommandEvent& event ) { event.Skip(); }
+			virtual void nextClick( wxCommandEvent& event ) { event.Skip(); }
+			virtual void loopStartNowClick( wxCommandEvent& event ) { event.Skip(); }
+			virtual void loopEndNowClick( wxCommandEvent& event ) { event.Skip(); }
 			virtual void OpenFile( wxCommandEvent& event ) { event.Skip(); }
 			virtual void OpenDisc( wxCommandEvent& event ) { event.Skip(); }
 			virtual void SaveAs( wxCommandEvent& event ) { event.Skip(); }

@@ -1,0 +1,18 @@
+digraph G {
+	node [label="\N", fontname=FreeSans, fontsize=10, shape=record];
+	edge [fontname=FreeSans, fontsize=10, labelfontname=FreeSans, labelfontsize=10];
+	graph [bb="0,0,568,574"];
+	Node1 [label="{portaudio::MemFunCallbackStream\< T \>\n|- adapter_\l|+ MemFunCallbackStream()\l+ MemFunCallbackStream()\l+ ~MemFunCallbackStre\
+am()\l+ open()\l- MemFunCallbackStream()\l- operator=()\l- open()\l}", height="1.67", width="2.94", color=black, fillcolor=grey75, style=filled, fontcolor=black, pos="253,68", rects="147,112,359,128 147,96,359,112 147,8,359,96"];
+	Node2 [label="{portaudio::CallbackStream\n||+ cpuLoad()\l# CallbackStream()\l# ~CallbackStream()\l- CallbackStream()\l- operator=()\l}", height="1.33", width="1.92", color=black, fillcolor=white, style=filled, URL="$a00005.html", tooltip="Base class for all Streams which use a callback-based mechanism.", pos="79,228", rects="10,260,148,276 10,244,148,260 10,180,148,244"];
+	Node3 [label="{portaudio::Stream\n|# stream_\l|+ ~Stream()\l+ close()\l+ isOpen()\l+ setStreamFinishedCallback()\l+ start()\l+ stop()\l+ abort\
+()\l+ isStopped()\l+ isActive()\l+ inputLatency()\l+ outputLatency()\l+ sampleRate()\l+ time()\l+ paStream()\l+ paStream()\l# St\
+ream()\l- Stream()\l- operator=()\l}", height="3.50", width="2.19", color=black, fillcolor=white, style=filled, URL="$a00020.html", tooltip="A Stream represents an active or inactive input and/or output data stream in the...", pos="79,440", rects="0,550,159,566 0,534,159,550 0,314,159,534"];
+	Node4 [label="{portaudio::MemFunCallbackStream\< T \>::MemFunToCallbackInterfaceAdapter\n|- instance_\l- memFun_\l|+ MemFunToCallbackInterface\
+Adapter()\l+ MemFunToCallbackInterfaceAdapter()\l+ init()\l+ paCallbackFun()\l}", height="1.33", width="5.58", color=black, fillcolor=white, style=filled, URL="$a00017.html", tooltip="Inner class which adapts a member function callback to a CallbackInterface compliant...", pos="367,228", rects="166,260,569,276 166,232,569,260 166,180,569,232"];
+	Node5 [label="{portaudio::CallbackInterface\n||+ ~CallbackInterface()\l+ paCallbackFun()\l}", height="0.83", width="2.03", color=black, fillcolor=white, style=filled, URL="$a00004.html", tooltip="Interface for an object that&#39;s callable as a PortAudioCpp callback object (ie...", pos="367,440", rects="294,454,441,470 294,438,441,454 294,410,441,438"];
+	Node2 -> Node1 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,131,180 138,174 154,159 171,143 187,128"];
+	Node3 -> Node2 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,79,314 79,304 79,294 79,285 79,276"];
+	Node4 -> Node1 [dir=back, color=darkorchid3, style=dashed, arrowtail=open, label=adapter_, pos="s,333,180 333,180 321,164 308,145 296,128", lp="348,154"];
+	Node5 -> Node4 [dir=back, color=midnightblue, style=solid, arrowtail=empty, pos="s,367,410 367,400 367,365 367,313 367,276"];
+}
